@@ -165,7 +165,7 @@ body{
 
     font-family: Poppins;
     font-style: normal;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 40px;
     line-height: 60px;
 
@@ -231,4 +231,57 @@ body{
 
     background: url(image.png);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+/*---------------------------------Game presentation section---------------------------------*/
+.gamePresentation{
+    position: static;
+    width: 1440px;
+    height: 736px;
+    left: 0px;
+    top: 666px;
+    
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.gamePresentation__travels{
+    position: absolute;
+    width: 506.49px;
+    height: 541px;
+    left: 164px;
+    top: 715px;
+}
+
+.secondtitles{
+    position: absolute;
+    width: 353px;
+    height: 120px;
+    left: 878px;
+    top: 852px;
+    
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 60px;
+    
+    color: #121212;
+
+
+}
+
+.descriptions{
+    position: absolute;
+    width: 383px;
+    height: 104px;
+    left: 878px;
+    top: 1009px;
+    
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 25px;
+    
+    color: #121212;
 }
