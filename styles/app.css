@@ -1,0 +1,234 @@
+body{
+    display: block;
+    margin: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+}
+/*---------------------------------remove numbers of the lists---------------------------------*/
+#without_numbers{
+    list-style-type: none;
+         display: inline;
+}
+/*---------------------------------universalmenu---------------------------------*/
+.menuBar{
+    position: fixed;
+    width: 100%;
+    height: 84px;
+    left: 0px;
+    top: 0px;
+    background: rgba(0, 0, 0, 0.82)
+    
+}
+
+/*--------------------------------- Items of universal menu ---------------------------------*/
+.menuBar__item--home{
+    position: absolute;
+    width: 36px;
+    height: 18px;
+    left: 382px;
+    top: 32px;
+
+    font-family: Roboto Condensed;
+    font-style: normal ;
+    font-weight: normal;
+    color: #FFFFFF;
+}
+
+.menuBar__item--news{
+    position: absolute;
+    width: 33px;
+    height: 18px;
+    left: 478px;
+    top: 32px;
+
+    font-family: Roboto Condensed;
+    font-style: normal ;
+    font-weight: normal;
+    color: #FFFFFF;
+}
+
+.menuBar__item--charcaters{
+    position: absolute;
+    width: 65px;
+    height: 18px;
+    left: 566px;
+    top: 32px;
+
+    font-family: Roboto Condensed;
+    font-style: normal ;
+    font-weight: normal;
+    color: #FFFFFF;
+}
+
+.menuBar__item--means{
+    position: absolute;
+    width: 55px;
+    height: 18px;
+    left: 674px;
+    top: 32px;
+
+    font-family: Roboto Condensed;
+    font-style: normal ;
+    font-weight: normal;
+    color: #FFFFFF;
+}
+
+.menuBar__item--hoyolab{
+    position: absolute;
+    width: 56px;
+    height: 18px;
+    left: 769px;
+    top: 32px;
+
+    font-family: Roboto Condensed;
+    font-style: normal ;
+    font-weight: normal;
+    color: #FFFFFF;
+}
+
+.menuBar__item--recharge{
+    position: absolute;
+    width: 56px;
+    height: 18px;
+    left: 864px;
+    top: 32px;
+
+    font-family: Roboto Condensed;
+    font-style: normal ;
+    font-weight: normal;
+    color: #FFFFFF;
+}
+
+.menuBar__item--button{
+    position: absolute;
+    width: 149px;
+    height: 55px;
+    left: 1159px;
+    top: 14px;
+    color: white;
+    border-radius: 9px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 22,5px;
+    background: #0183CD;
+    border-color: transparent;
+
+}
+
+.menuBar__image{
+    position: fixed;
+    width: 362px;
+    height: 66px;
+    left: 7px;
+    top: 9px;
+}
+
+/*---------------------------------Landing section---------------------------------*/
+
+.ladingPage__items{
+    position: static;
+    width: 1440%;
+    height: 666px;
+    left: 0px;
+    top: 0px;
+    background: rgba(0, 0, 0, 0.38);
+}
+.landingPage{
+    position: static;
+    width: 1440%;
+    height: 666px;
+    left: 0px;
+    top: 0px;
+    background-image: url("/Recursos/landing/landingImage.png");
+}
+
+.landing__items--text{
+    position: absolute;
+    width: 764px;
+    height: 271px;
+    left: 70px;
+    top: 170px;
+    border-radius: 10px;
+    background-color:  rgba(0, 0, 0, 0.53);
+}
+
+.title{
+    position: absolute;
+    width: 539px;
+    height: 120px;
+    left: 27px;
+    top: -20px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 60px;
+
+    color: #FFFFFF;
+}
+
+.paragraph{
+    position: absolute;
+    width: 713px;
+    height: 104px;
+    left: 27px;
+    top: 130px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 25px;
+
+    color: #FFFFFF;
+}
+
+.landing__item--ps5{
+    position: absolute;
+    width: 188px;
+    height: 62px;
+    left: 70px;
+    top: 490px;
+
+    background: url(image.png);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.landing__item--appStore{
+    position: absolute;
+    width: 188px;
+    height: 62px;
+    left: 282px;
+    top: 490px;
+
+    background: url(image.png);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+}
+
+.landing__item--google{
+    position: absolute;
+    width: 188px;
+    height: 62px;
+    left: 494px;
+    top: 490px;
+
+    background: url(image.png);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.landing__item--windows{
+    position: absolute;
+    width: 188px;
+    height: 62px;
+    left: 706px;
+    top: 490px;
+
+    background: url(image.png);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
