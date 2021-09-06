@@ -242,8 +242,8 @@ body{
     top: 666px;
     
     background: #FFFFFF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
 .gamePresentation__travels{
     position: absolute;
     width: 506.49px;
@@ -284,4 +284,54 @@ body{
     line-height: 25px;
     
     color: #121212;
+}
+
+/*game videos section*/
+.gamevideos{
+    position: static;
+    width: 1440px;
+    height: 763px;
+    left: 0px;
+    top: 1402px;
+    
+    background: #111111;
+}
+.secondtitles__gametitle{
+    position: absolute;
+    width: 266px;
+    height: 60px;
+    left: 188px;
+    top: 1688px;
+    
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 60px;
+    
+    color: #FFFFFF;
+}
+
+.descriptions__videosdescription{
+    position: absolute;
+    width: 326px;
+    height: 104px;
+    left: 188px;
+    top: 1776px;
+    
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 25px;
+    
+    color: #FFFFFF;
+}
+
+.gamevideos__videos{
+    position: absolute;
+    width: 685px;
+    height: 343.73px;
+    left: 640px;
+    top: 1593px;
 }
