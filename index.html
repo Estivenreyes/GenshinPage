@@ -1,45 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Genshin Impact Web site</title>
-    <link rel="stylesheet" href="styles/app.css">
-</head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Genshin Impact Web site</title>
+        <!--<link rel="stylesheet" href="styles/app.css">-->
+        <link rel="stylesheet" href="./styles/index.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;600&display=swap"
+            rel="stylesheet"
+        />
+    </head>
 
-<body>
-    <header>
-        <nav class="menuBar" id="universal-bar">
-            <ol class="menuBar__item" id="without_numbers">
-                <li class="menuBar__image"><a href=""><img src="./Recursos/landing/genshin.png" alt="GenshinLogo"></a></li>
-                <li class="menuBar__item--home">Home</li>
-                <li class="menuBar__item--news">News</li>
-                <li class="menuBar__item--charcaters">Characters</li>
-                <li class="menuBar__item--means">Means</li>
-                <li class="menuBar__item--hoyolab"><a href="https://www.hoyolab.com/genshin/" target="_blank">HoYoLAB</a></li>
-                <li class="menuBar__item--recharge">Recharge</li>
-                <button class="menuBar__item--button">Download</button>
-            </ol>
-        </nav>
-        
-    </header>
-    
-    <section class="landingPage">
-        <nav class="ladingPage__items">
+    <body>
+        <header>
+            <img src="./Recursos/landing/genshin.png" alt="GenshinLogo" />
+            <nav class="nav" id="universal-bar">
+                <ol class="nav__ol" id="without_numbers">
+                    <li class="nav__item">Home</li>
+                    <li class="nav__item">News</li>
+                    <li class="nav__item">Characters</li>
+                    <select class="nav__item" name="Meas" id="">
+                        <option value="world">World</option>
+                        <option value="explore">Explore</option>
+                        <option value="manga">Manga</option>
+                    </select>
+
+                    <li class="nav__item">
+                        <a
+                            href="https://www.hoyolab.com/genshin/"
+                            target="_blank"
+                            >HoYoLAB</a
+                        >
+                    </li>
+                    <li class="nav__item">Recharge</li>
+                </ol>
+            </nav>
+            <button class="button--download">Download</button>
+        </header>
+
+        <article class="landingPage">
+            <section class="landingPage__text">
+                <p class="title">Download now available <br> for all platforms</p>
+                <p class="paragraph">
+                    Genshin Impact is an
+                    <b>open-world action role-playing game</b> that allows the
+                    player to control one of four interchangeable characters in
+                    a party. The World Level is a measure of how strong the
+                    enemies within the world are and the rarity of rewards that
+                    defeating them gives.
+                </p>
+            </section>
+
+            <section class="landingPage__button">
+                <img src="./Recursos/landing/ps5.png" alt="" />
+
+                <img src="./Recursos/landing/appStore.png" alt="" />
+
+                <img src="./Recursos/landing/google.png" alt="" />
+
+                <img src="./Recursos/landing/windows.png" alt="" />
+            </section>
+
+            <!--
+        <section class="test">
             <main class="landing__items--text">
                 <h1 class="title">Download now available for all platforms</h1>
                 <p class="paragraph">
-                    Genshin Impact is an <b>open-world action role-playing game</b> that allows the player to control one of four interchangeable characters in a party. 
-                    The World Level is a measure of how strong the enemies within the world are and the rarity of rewards that defeating them gives.
+                    Genshin Impact is an <b>open-world action role-playing game</b> that allows the player to control
+                    one of four interchangeable characters in a party.
+                    The World Level is a measure of how strong the enemies within the world are and the rarity of
+                    rewards that defeating them gives.
                 </p>
             </main>
-            <ul class="landing__item" id="without_numbers">
+
+            <ul>
+                <li> <a href="https://www.playstation.com/es-co/games/genshin-impact/" target="_blank"><img
+                            src="./Recursos/landing/ps5.png" alt="ps5-ps4"></a></li>
+                <li> <a href="https://www.playstation.com/es-co/games/genshin-impact/" target="_blank"><img
+                            src="./Recursos/landing/ps5.png" alt="ps5-ps4"></a></li>
+                <li> <a href="https://www.playstation.com/es-co/games/genshin-impact/" target="_blank"><img
+                            src="./Recursos/landing/ps5.png" alt="ps5-ps4"></a></li>
+            </ul>
+            </div>
+             <ul class="landing__item" id="without_numbers">
                 <li class="landing__item--ps5">
                     <a href="https://www.playstation.com/es-co/games/genshin-impact/" target="_blank"><img src="./Recursos/landing/ps5.png" alt="ps5-ps4"></a>
                 </li>
                 <li class="landing__item--appStore">
-                    <a href="https://apps.apple.com/app/id1517783697" target="_blank"><img src="./Recursos/landing/appStore.png" alt="appStore"></a>
+                    <a href="https://apps.apple.com/app/id1517783697" target="_blank"><img src="./Recursos/landing/ps5.png./Recursos/landing/ps5.png./Recursos/landing/ps5.png" alt="appStore"></a>
                 </li>
                 <li class="landing__item--google">
                     <a href="https://play.google.com/store/apps/details?id=com.miHoYo.GenshinImpact" target="_blank"><img src="./Recursos/landing/google.png" alt="googlePlay"></a>
@@ -47,119 +99,143 @@
                 <li class="landing__item--windows">
                     <a href=""><img src="./Recursos/landing/windows.png" alt="windows"></a>
                 </li>
-            </ul>
-        </nav>    
-    </section>
+            </ul> -->
+        </article>
 
-    <div class="gamePresentation">
-        <figure class="gamePresentation__travels">
-            <img src="./Recursos/information/travels.png" alt="travels">
-        </figure>
-        <h2 class="secondtitles">An epic fantasy adventure game</h2>
-        <p class="descriptions">
-            Experience an immersive single player adventure. As a traveler from another world, you will begin a journey to reunite with your lost family member and find yourself.
-        </p>
-    </div>
-    <div class="gamevideos" >
-        <h2 class="secondtitles__gametitle">Game videos</h2>
-        <p class="descriptions__videosdescription">
-            Watch here videos about character gameplays, character demos, builds, missions, etc.
-        </p>
-        <ul class="gamevideos__videos" id="without_numbers">
-            <li class="gamevideos__yoimiya">
-                <figure>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/b4QN9epy680" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </figure>
-            <!-- </li>
+        <div class="gamePresentation">
+            <figure class="gamePresentation__travels">
+                <img src="./Recursos/information/travels.png" alt="travels" />
+            </figure>
+            <h2 class="secondtitles">An epic fantasy adventure game</h2>
+            <p class="descriptions">
+                Experience an immersive single player adventure. As a traveler
+                from another world, you will begin a journey to reunite with
+                your lost family member and find yourself.
+            </p>
+        </div>
+        <div class="gamevideos">
+            <h2 class="secondtitles__gametitle">Game videos</h2>
+            <p class="descriptions__videosdescription">
+                Watch here videos about character gameplays, character demos,
+                builds, missions, etc.
+            </p>
+            <ul class="gamevideos__videos" id="without_numbers">
+                <li class="gamevideos__yoimiya">
+                    <figure>
+                        <iframe
+                            width="560"
+                            height="315"
+                            src="https://www.youtube.com/embed/b4QN9epy680"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                        ></iframe>
+                    </figure>
+                    <!-- </li>
             <li class="gamevideos"></li>
             <li></li>
             <li></li>
             <li></li> -->
-        </ul>   
-    </div>
-    <div class="newsSections">
-        <h2>News</h2>
-        <ul>
-            <li>
-                <img src="Recursos/Notice/MainContent1.png" alt="">
-            </li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-    </div>
-    <div class="inputs">
-        <h2>Put your code</h2>
-        <h3>Redemption code</h3>
-        <ul>
-            <li>
-                <h4>Server</h4>
-                <input type="text" class="input__code">
-            </li>
-            <li>
-                <h4>Nickname</h4>
-                <input type="text" class="input__code">
-            </li>
-            <li>
-                <h4>Redeem code</h4>
-                <input type="text" class="input__code">
-            </li>
-            <li>
-                <button>Exchange</button>
-            </li>
-        </ul>
-        <h3>About the redemption code</h3>
-        <ol>
-            <li>
-                <p class="font">
-                    <b>Before redeeming a code</b>, make sure you have started an in-game game and linked your game to your miHoYo Pass. 
-                    Otherwise, you will not be able to redeem the code.
-                </p>
-            </li>
-            <li>
-                <p class="font">
-                    After redeeming a code, <b>you will receive the redeemed items</b> via in-game mail. Check your email to verify that you received them correctly.
-                </p>
-            </li>
-            <li>
-                <p class="font">
-                    <b>Pay attention</b> to the redemption conditions and the validity period of the code. Codes cannot be redeemed after expiration.
-                </p>
-            </li>
-            <li>
-                <p class="font">
-                    Each redemption code <b>can only be used once</b>. The same game cannot use redemption codes of the same type more than once. 
-                </p>
-            </li>
-        </ol>
-    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="newsSections">
+            <h2>News</h2>
+            <ul>
+                <li>
+                    <img src="Recursos/Notice/MainContent1.png" alt="" />
+                </li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <div class="inputs">
+            <h2>Put your code</h2>
+            <h3>Redemption code</h3>
+            <ul>
+                <li>
+                    <h4>Server</h4>
+                    <input type="text" class="input__code" />
+                </li>
+                <li>
+                    <h4>Nickname</h4>
+                    <input type="text" class="input__code" />
+                </li>
+                <li>
+                    <h4>Redeem code</h4>
+                    <input type="text" class="input__code" />
+                </li>
+                <li>
+                    <button>Exchange</button>
+                </li>
+            </ul>
+            <h3>About the redemption code</h3>
+            <ol>
+                <li>
+                    <p class="font">
+                        <b>Before redeeming a code</b>, make sure you have
+                        started an in-game game and linked your game to your
+                        miHoYo Pass. Otherwise, you will not be able to redeem
+                        the code.
+                    </p>
+                </li>
+                <li>
+                    <p class="font">
+                        After redeeming a code,
+                        <b>you will receive the redeemed items</b> via in-game
+                        mail. Check your email to verify that you received them
+                        correctly.
+                    </p>
+                </li>
+                <li>
+                    <p class="font">
+                        <b>Pay attention</b> to the redemption conditions and
+                        the validity period of the code. Codes cannot be
+                        redeemed after expiration.
+                    </p>
+                </li>
+                <li>
+                    <p class="font">
+                        Each redemption code <b>can only be used once</b>. The
+                        same game cannot use redemption codes of the same type
+                        more than once.
+                    </p>
+                </li>
+            </ol>
+        </div>
 
-    <div class="rechargeCristals">
-        <h2>Reharge Genesis Cristal</h2>
-        <figure>
-            <img src="./Recursos/Recharge Cristal Genesis/GCBig.png" alt="GenesisCristalBig">
-        </figure>
-        <ul class="rechargeCristals__intems">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-    </div>
-    <div class="footer">
-        <footer class="footer__text">
-            <p class="font">
-                Epic, Epic Games, Epic Games Store, the Epic Games Store logo, 
-                and Epic Online Services are trademarks and/or registered trademarks of Epic Games. 
-                All other trademarks are the property of their respective owners.
-            </p>
-        </footer>
-    </div>
-</body>
+        <div class="rechargeCristals">
+            <h2>Reharge Genesis Cristal</h2>
+            <figure>
+                <img
+                    src="./Recursos/Recharge Cristal Genesis/GCBig.png"
+                    alt="GenesisCristalBig"
+                />
+            </figure>
+            <ul class="rechargeCristals__intems">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <div class="footer">
+            <footer class="footer__text">
+                <p class="font">
+                    Epic, Epic Games, Epic Games Store, the Epic Games Store
+                    logo, and Epic Online Services are trademarks and/or
+                    registered trademarks of Epic Games. All other trademarks
+                    are the property of their respective owners.
+                </p>
+            </footer>
+        </div>
+    </body>
 </html>

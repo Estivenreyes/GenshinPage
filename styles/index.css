@@ -1,0 +1,222 @@
+*{
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+}
+
+/*---------------------------------Navigation bar---------------------------------*/
+
+header {
+    width: 100%;
+    height: 100px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+    position: fixed;
+
+    z-index: 1;
+}
+
+.nav__ol {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+.nav__ol select {
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.nav__ol select option {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.nav__ol a:visited {
+    color: white;
+}
+
+.nav__item {
+    padding: 0px 20px;
+
+    font-family: Roboto Condensed;
+    color: #ffffff;
+}
+
+/*---------------------------------Landing page---------------------------------*/
+
+.landingPage {
+    width: 100%;
+
+    background-image: url("/Recursos/landing/landingImage.png");
+    height: 769px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+}
+
+.landingPage__text {
+    color: #ffffff;
+    padding: 20px;
+    margin-bottom: 50px;
+
+    width: 1000px;
+    height: 352px;
+    background: rgba(0, 0, 0, 0.53);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.landingPage__text .title {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    margin: 0;
+}
+
+.landingPage__text .paragraph {
+    width: 70%;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 25px;
+
+    margin: 0;
+}
+
+.landingPage__button {
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.button--download {
+    color: white;
+    border-radius: 9px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1em;
+    line-height: 22, 5px;
+    background: #0183cd;
+
+    padding: 15px;
+    border: none;
+    outline: none;
+}
+
+/*------------------------*/
+
+/*---------------------------------Game presentation section---------------------------------*/
+.gamePresentation {
+    position: static;
+    width: 100px;
+    height: 736px;
+    left: 0px;
+    top: 666px;
+
+    background: #ffffff;
+}
+
+.gamePresentation__travels {
+    position: absolute;
+    width: 506.49px;
+    height: 541px;
+    left: 164px;
+    top: 715px;
+}
+
+.secondtitles {
+    position: absolute;
+    width: 353px;
+    height: 120px;
+    left: 878px;
+    top: 852px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.5em;
+    line-height: 60px;
+
+    color: #121212;
+}
+
+.descriptions {
+    position: absolute;
+    width: 383px;
+    height: 104px;
+    left: 878px;
+    top: 1009px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 25px;
+
+    color: #121212;
+}
+
+/*game videos section*/
+.gamevideos {
+    position: static;
+    width: 100px;
+    height: 763px;
+    left: 0px;
+    top: 1402px;
+
+    background: #111111;
+}
+.secondtitles__gametitle {
+    position: absolute;
+    width: 266px;
+    height: 60px;
+    left: 188px;
+    top: 1688px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.5em;
+    line-height: 60px;
+
+    color: #ffffff;
+}
+
+.descriptions__videosdescription {
+    position: absolute;
+    width: 326px;
+    height: 104px;
+    left: 188px;
+    top: 1776px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 25px;
+
+    color: #ffffff;
+}
+
+.gamevideos__videos {
+    position: absolute;
+    width: 685px;
+    height: 343.73px;
+    left: 640px;
+    top: 1593px;
+}
