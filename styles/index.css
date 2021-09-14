@@ -3,8 +3,24 @@
 }
 
 html,
+
 body {
     margin: 0;
+}
+
+h2{
+    font: size 48px;
+    display: flex;
+    justify-content: center;
+    color: #FFFFFF;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3em;
+    line-height: 72px;
+    
+
 }
 
 /*---------------------------------Navigation bar---------------------------------*/
@@ -31,7 +47,7 @@ header {
 
 .nav__ol select {
     background: transparent;
-    border: none;
+    border: 0;
     outline: none;
 }
 
@@ -47,6 +63,7 @@ header {
     padding: 0px 20px;
 
     font-family: Roboto Condensed;
+    font-size: 1em;
     color: #ffffff;
 }
 
@@ -61,14 +78,15 @@ header {
     flex-direction: column;
     justify-content: center;
     padding-left: 50px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .landingPage__text {
     color: #ffffff;
-    padding: 20px;
+    padding: 30px;
     margin-bottom: 50px;
 
-    width: 1000px;
+    width: 940px;
     height: 352px;
     background: rgba(0, 0, 0, 0.53);
     border-radius: 10px;
@@ -90,7 +108,7 @@ header {
     width: 70%;
     font-family: Poppins;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 300;
     font-size: 1em;
     line-height: 25px;
 
@@ -100,7 +118,8 @@ header {
 .landingPage__button {
     display: flex;
     align-items: center;
-    padding: 0px 20px;
+    padding: 0px 0px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .button--download {
@@ -110,33 +129,27 @@ header {
     font-style: normal;
     font-weight: 300;
     font-size: 1em;
-    line-height: 22, 5px;
+    width: 9%;
     background: #0183cd;
 
-    padding: 15px;
+    padding: 17px;
     border: none;
     outline: none;
 }
 
-/*------------------------*/
-
 /*---------------------------------Game presentation section---------------------------------*/
 .gamePresentation {
-    position: static;
-    width: 100px;
-    height: 736px;
-    left: 0px;
-    top: 666px;
+    width: 100%;
+    display: flex;
 
     background: #ffffff;
 }
 
 .gamePresentation__travels {
-    position: absolute;
-    width: 506.49px;
-    height: 541px;
-    left: 164px;
-    top: 715px;
+    width: 100%;
+    height: 754.56px;
+    display: flex;
+
 }
 
 .secondtitles {
@@ -171,52 +184,29 @@ header {
     color: #121212;
 }
 
-/*game videos section*/
-.gamevideos {
-    position: static;
-    width: 100px;
-    height: 763px;
-    left: 0px;
-    top: 1402px;
-
-    background: #111111;
+/*---------------------------------News Section-----------------------------------------*/
+.newsSections{
+    width: 100%;
+    background-image: url("/Recursos/Notice/backgroundNew.png");
 }
-.secondtitles__gametitle {
-    position: absolute;
-    width: 266px;
-    height: 60px;
-    left: 188px;
-    top: 1688px;
-
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 2.5em;
-    line-height: 60px;
-
-    color: #ffffff;
+.news__box{
+    background-color: rgba(0, 0, 0, 0.62);
+    width: 75%;
+    border-radius: 20px;
+    margin: auto;
 }
-
-.descriptions__videosdescription {
-    position: absolute;
-    width: 326px;
-    height: 104px;
-    left: 188px;
-    top: 1776px;
-
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 1em;
-    line-height: 25px;
-
-    color: #ffffff;
+.news__subtitle{
+    font-size: 2em;
+    font-family: Roboto;
+    font-weight: lighter;
+    
 }
-
-.gamevideos__videos {
-    position: absolute;
-    width: 685px;
-    height: 343.73px;
-    left: 640px;
-    top: 1593px;
+figcaption{
+    display: flex;
+    flex-wrap: wrap;
+    background: rgb(0 0 0 / 65%);
+    color: #FFF;
+    padding: 20px;
+    border-radius: 0 0 20px 28px;
+    width: 35%;
 }
