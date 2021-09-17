@@ -5,7 +5,6 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Genshin Impact Web site</title>
-        <!--<link rel="stylesheet" href="styles/app.css">-->
         <link rel="stylesheet" href="./styles/index.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,6 +15,7 @@
     </head>
 
     <body>
+        <!----------------------------------------------------- Here is the main menu section----------------------------------------------------->
         <header>
             <img src="./Recursos/landing/genshin.png" alt="GenshinLogo" />
             <nav class="nav" id="universal-bar">
@@ -41,7 +41,7 @@
             </nav>
             <button class="button--download">Download</button>
         </header>
-
+<!----------------------------------------------------- Here is the landing section----------------------------------------------------->
         <article class="landingPage">
             <section class="landingPage__text">
                 <p class="title">Download now available <br> for all platforms</p>
@@ -64,44 +64,8 @@
 
                 <img src="./Recursos/landing/windows.png" alt="" />
             </section>
-
-            <!--
-        <section class="test">
-            <main class="landing__items--text">
-                <h1 class="title">Download now available for all platforms</h1>
-                <p class="paragraph">
-                    Genshin Impact is an <b>open-world action role-playing game</b> that allows the player to control
-                    one of four interchangeable characters in a party.
-                    The World Level is a measure of how strong the enemies within the world are and the rarity of
-                    rewards that defeating them gives.
-                </p>
-            </main>
-
-            <ul>
-                <li> <a href="https://www.playstation.com/es-co/games/genshin-impact/" target="_blank"><img
-                            src="./Recursos/landing/ps5.png" alt="ps5-ps4"></a></li>
-                <li> <a href="https://www.playstation.com/es-co/games/genshin-impact/" target="_blank"><img
-                            src="./Recursos/landing/ps5.png" alt="ps5-ps4"></a></li>
-                <li> <a href="https://www.playstation.com/es-co/games/genshin-impact/" target="_blank"><img
-                            src="./Recursos/landing/ps5.png" alt="ps5-ps4"></a></li>
-            </ul>
-            </div>
-             <ul class="landing__item" id="without_numbers">
-                <li class="landing__item--ps5">
-                    <a href="https://www.playstation.com/es-co/games/genshin-impact/" target="_blank"><img src="./Recursos/landing/ps5.png" alt="ps5-ps4"></a>
-                </li>
-                <li class="landing__item--appStore">
-                    <a href="https://apps.apple.com/app/id1517783697" target="_blank"><img src="./Recursos/landing/ps5.png./Recursos/landing/ps5.png./Recursos/landing/ps5.png" alt="appStore"></a>
-                </li>
-                <li class="landing__item--google">
-                    <a href="https://play.google.com/store/apps/details?id=com.miHoYo.GenshinImpact" target="_blank"><img src="./Recursos/landing/google.png" alt="googlePlay"></a>
-                </li>
-                <li class="landing__item--windows">
-                    <a href=""><img src="./Recursos/landing/windows.png" alt="windows"></a>
-                </li>
-            </ul> -->
         </article>
-
+<!----------------------------------------------------- Here is the game presentation section----------------------------------------------------->
         <div class="gamePresentation">
             <figure class="gamePresentation__travels">
                 <img src="./Recursos/information/travels.png" alt="travels" />
@@ -117,46 +81,57 @@
             </div>
             
         </section>
-
+<!----------------------------------------------------- Here is the News section----------------------------------------------------->
         <div class="newsSections">
             <h2>News</h2>
             <div class="news__box">
                 <h2 class= "news__subtitle">Recently</h2>
-                <div>
-                        <figure>
-                            <img src="Recursos/Notice/mainContent1.png" alt="">
-                            <figcaption>Descripción de la imagen</figcaption>
-                        </figure>
-                </div>
+                <div class = "news__flexbox">
+                    <figure>
+                        <img src="Recursos/Notice/mainContent1.png" alt="aloyImage">
+                        <figcaption>
+                            Genshin Impact Character Demo - Aloy: The Mysterious Huntress
+                        </figcaption>
+                    </figure>
+                 </div>
                     <div>
-                        <div>
+                        <div class = "news__flexboxNew">
                             <figure>
-                                <img src="./Recursos/Notice/sC1.png" alt="">
-                                <figcaption>Descripción de la imagen</figcaption>
+                                <img src="./Recursos/Notice/sC1.png" alt="baalimage">
+                                <figcaption>
+                                    Genshin Impact Character Demo - Shogun Raiden: Judgment of Euthymia
+                                </figcaption>
                             </figure>
                         </div>
-                        <div>
-                            <figure>
-                                <img src="./Recursos/Notice/sC2.png" alt="">
-                                <figcaption>Descripción de la imagen</figcaption>
+                        <div class = "news__flexboxNew">
+                            <figure class = "news__flexbox--">
+                                <img src="./Recursos/Notice/sC2.png" alt="previewimage">
+                                <figcaption>
+                                    Genshin Impact Plot Preview - Shogun Raiden: Nightmares
+                                </figcaption>
                             </figure>
                         </div>
-                        <div>
+                        <div class = "news__flexboxNew">
                             <figure>
-                                <img src="" alt="">
-                                <figcaption>Descripción de la imagen</figcaption>
+                                <img src="./Recursos/Notice/sC3.png" alt="avanceimage">
+                                <figcaption>
+                                    Genshin Impact Version 2.1 Preview: A Moon Over Mortals
+                                </figcaption>
                             </figure>
                         </div>
-                        <div>
+                        <div class = "news__flexboxNew">
                             <figure>
-                                <img src="" alt="">
-                                <figcaption>Descripción de la imagen</figcaption>
+                                <img src="./Recursos/Notice/sC4.png" alt="saraDemoimage">
+                                <figcaption>
+                                    Genshin Impact Character Demo - Kujou Sara: Will of Thunder
+                                </figcaption>
                             </figure>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <!----------------------------------------------------- Here is the put code section----------------------------------------------------->
         <div class="inputs">
             <h2>Put your code</h2>
             <h3>Redemption code</h3>
@@ -211,15 +186,65 @@
                 </li>
             </ol>
         </div>
-
+<!----------------------------------------------------- Here is the Footer section----------------------------------------------------->
         <div class="footer">
-            <footer class="footer__text">
-                <p class="font">
-                    Epic, Epic Games, Epic Games Store, the Epic Games Store
-                    logo, and Epic Online Services are trademarks and/or
-                    registered trademarks of Epic Games. All other trademarks
-                    are the property of their respective owners.
-                </p>
+            <footer> 
+                <div class="footer__image">
+                    <figure>
+                       <a href="https://www.facebook.com/genshinimpact.es/?brand_redir=326121328238064"><img src="Recursos/footer/facebook.png" alt="facebookImg"></a>
+                    </figure>
+                    <figure>
+                       <a href="https://twitter.com/GenshinImpact"><img src="Recursos/footer/twitter.png" alt="twitterImg"></a>
+                    </figure>
+                    <figure>
+                        <a href="https://www.youtube.com/c/GenshinImpact"><img src="Recursos/footer/youtube.png" alt="youtubeImg"></a>
+                    </figure>
+                    <figure>
+                        <a href="https://www.instagram.com/genshinimpact/"><img src="Recursos/footer/instagram.png" alt="instagramImg"></a>
+                    </figure>
+                    <figure>
+                        <a href="https://discord.com/invite/genshinimpact"><img src="Recursos/footer/discord.png" alt="discordImg"></a>
+                    </figure>
+                    <figure>
+                       <a href="https://www.reddit.com/r/Genshin_Impact/"><img src="Recursos/footer/Reddit.png" alt="redditImg"></a>
+                    </figure>
+                    <figure>
+                        <a href="https://www.hoyolab.com/home"><img src="Recursos/footer/hoYoLab.png" alt="facebookImg"></a>
+                    </figure>
+                </div>
+                <div>
+                    <figure>
+                        <img src="./Recursos/footer/mihoyoLogo.png" alt="mihoyoLogo">
+                    </figure>
+                    <figure>
+                        <img src="./Recursos/footer/genshinLogo.svg" alt="genshinLogo">
+                    </figure>
+                </div>
+                <div class="footer__fond">
+                    <p>
+                        | Privacy Policy | Terms of Service
+                    </p>
+                    <p>
+                        | About us | Contact us |
+                    </p>
+                    <p>
+                        Copyright © 2020 miHoYo All Rights Reserved
+                    </p>
+                    <p>
+                        "PlayStation Family Mark," "PS5 logo" and "PS4 logo" are registered trademarks or trademarks of Sony Interactive Entertainment Inc.
+                    </p>
+                    <p>
+                        Epic, Epic Games, Epic Games Store, the Epic Games Store logo, and Epic Online Services are trademarks and/or registered trademarks of Epic Games. All other trademarks are the property of their respective owners. 
+                    </p> 
+                </div>
+                <div>
+                    <figure>
+                        <a href="https://pegi.info/"><img src="https://webstatic-sea.mihoyo.com/upload/op-public/2021/03/02/647d16e8c7025d1ca1de95a17d264693_1896166264332371978.png" alt="pegiEurope"></a>
+                    </figure>
+                    <figure>
+                        <img src="./Recursos/footer/pegi.png" alt="pegiImg">
+                    </figure>
+                </div>
             </footer>
         </div>
     </body>

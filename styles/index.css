@@ -129,7 +129,7 @@ header {
     font-style: normal;
     font-weight: 300;
     font-size: 1em;
-    width: 9%;
+     
     background: #0183cd;
 
     padding: 17px;
@@ -189,24 +189,63 @@ header {
     width: 100%;
     background-image: url("/Recursos/Notice/backgroundNew.png");
 }
+
 .news__box{
+    display: flex;
     background-color: rgba(0, 0, 0, 0.62);
-    width: 75%;
+    width: 80%;
     border-radius: 20px;
     margin: auto;
 }
+
 .news__subtitle{
     font-size: 2em;
     font-family: Roboto;
     font-weight: lighter;
+    justify-content: left;
+    padding: 50px;
     
 }
+
 figcaption{
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
+    margin: 0px;
+
     background: rgb(0 0 0 / 65%);
     color: #FFF;
-    padding: 20px;
+    padding: 40px;
     border-radius: 0 0 20px 28px;
-    width: 35%;
+    width: 100%;
+}
+.news__flexbox{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 35px;
+    
+}
+.news__flexboxNew{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 30%;
+    margin: 40px;
+
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+}
+/*---------------------------------News Section-----------------------------------------*/
+.footer{
+    background-color: #111111;
 }
