@@ -242,10 +242,81 @@ figcaption{
     font-family: Roboto Condensed;
     font-style: normal;
     font-weight: 300;
-    font-size: 16px;
+    font-size: 1em;
     line-height: 19px;
 }
-/*---------------------------------News Section-----------------------------------------*/
+/*---------------------------------Footer Section-----------------------------------------*/
 .footer{
     background-color: #111111;
+    width: 100%;
+    height: 550px;
+}
+
+.footer__sectionbar{
+    position: absolute;
+    width: 100%;
+    height: 1.34px;
+    top: 4220.88px;
+    
+    background: #999999;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.footer__image{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+}
+
+.footer__logos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 220px;
+}
+
+.footer__logobar{
+    width: 100%;
+    height: 2.64px;
+    left: 567px;
+    top: 443.65px;
+    
+    background: #999999;
+    transform: matrix(0, 1, 1, 0, 0, 0);
+}
+
+.footer__fond{
+    position: absolute;
+    width: 701px;
+    left: 1059px;
+    top: 4250px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 27px;
+    
+    color: #6C7D7D;
+}
+
+.footer__fond--copy{
+    color: #F0FFFF;
+}
+
+.footer__fond--ps5{
+    font-size: 0.9em;
+}
+
+.footer__pegi{
+    position: absolute;
+    width: 100%;
+    left: 1025px;
+    top: 4549px;
+    
+    background: url(image.png);
 }
