@@ -59,13 +59,18 @@
                 </p>
             </article>
             <div class="landingPage__button">
-                <img src="./Recursos/landing/ps5.png" alt="ps5"/>
-
-                <img src="./Recursos/landing/appStore.png" alt="appStore"/>
-
-                <img src="./Recursos/landing/google.png" alt="google"/>
-
-                <img src="./Recursos/landing/windows.png" alt="windows"/>
+                <figure class="landingPage__image">
+                    <img src="./Recursos/landing/ps5.png" alt="ps5"/>
+                </figure>
+                <figure class="landingPage__image">
+                    <img src="./Recursos/landing/appStore.png" alt="appStore"/>
+                </figure>
+                <figure class="landingPage__image">
+                    <img src="./Recursos/landing/google.png" alt="google"/>
+                </figure>
+                <figure class="landingPage__image">
+                    <img src="./Recursos/landing/windows.png" alt="windows"/>
+                </figure>
             </div>
         </section>
 <!----------------------------------------------------- Here is the game presentation section----------------------------------------------------->
@@ -75,8 +80,10 @@
                     <img src="./Recursos/information/travels.png" alt="travels"/>
                 </figure>
             </article>
-            <article class="gameInformation__section">
-                <h2 class="gameInformation__subtitles">An epic fantasy adventure game</h2>
+            <article class="gameInformation__section2">
+                <h2 class="gameInformation__subtitles">
+                    An epic fantasy adventure game
+                </h2>
                 <p class="gameInformation__descriptions">
                     Experience an immersive single player adventure. As a traveler
                     from another world, you will begin a journey to reunite with
@@ -106,17 +113,18 @@
 <!----------------------------------------------------- Here is the News section----------------------------------------------------->
         <section class="newsSections">
             <h2>News</h2>
-            <article class="news__box">
+            <section class="news__box">
                 <h2 class= "news__subtitle">Recently</h2>
                     <div>
-                        <div class = "news__flexbox">
+                        <article class = "news__flexbox">
                             <figure>
                                 <img src="Recursos/Notice/mainContent1.png" alt="aloyImage">
-                                <figcaption>
+                                <figcaption class="news__figcaption">
                                     Genshin Impact Character Demo - Aloy: The Mysterious Huntress
                                 </figcaption>
                             </figure>
-                         </div>
+                        </article>
+                        <article class = "news__flexbox">
                         <div class = "news__flexboxNew">
                             <figure>
                                 <img src="./Recursos/Notice/sC1.png" alt="baalimage">
@@ -149,9 +157,10 @@
                                 </figcaption>
                             </figure>
                         </div>
+                        </article>
                     </div>
                 </div>
-            </article>
+            </section>
         </section>
         <!----------------------------------------------------- Here is the put code section----------------------------------------------------->
         <section class = "section__code">
@@ -213,34 +222,33 @@
            </div>
         </section>
 <!----------------------------------------------------- Here is the Footer section----------------------------------------------------->
-        <div class="footer">
-            <footer> 
-                <section class="footer__sectionbar">
-                    <div class="footer__image">
-                        <figure>
+            <footer class="footer"> 
+                    <article class="footer__image">
+                        <div class="footer__sectionbar"></div>
+                        <figure class="footer__elemts">
                            <a href="https://www.facebook.com/genshinimpact.es/?brand_redir=326121328238064"><img src="Recursos/footer/facebook.png" alt="facebookImg"></a>
                         </figure>
-                        <figure>
+                        <figure class="footer__elemts">
                            <a href="https://twitter.com/GenshinImpact"><img src="Recursos/footer/twitter.png" alt="twitterImg"></a>
                         </figure>
-                        <figure>
+                        <figure class="footer__elemts">
                             <a href="https://www.youtube.com/c/GenshinImpact"><img src="Recursos/footer/youtube.png" alt="youtubeImg"></a>
                         </figure>
-                        <figure>
+                        <figure class="footer__elemts">
                             <a href="https://www.instagram.com/genshinimpact/"><img src="Recursos/footer/instagram.png" alt="instagramImg"></a>
                         </figure>
-                        <figure>
+                        <figure class="footer__elemts">
                             <a href="https://discord.com/invite/genshinimpact"><img src="Recursos/footer/discord.png" alt="discordImg"></a>
                         </figure>
-                        <figure>
+                        <figure class="footer__elemts">
                            <a href="https://www.reddit.com/r/Genshin_Impact/"><img src="Recursos/footer/Reddit.png" alt="redditImg"></a>
                         </figure>
-                        <figure>
+                        <figure class="footer__elemts">
                             <a href="https://www.hoyolab.com/home"><img src="Recursos/footer/hoYoLab.png" alt="facebookImg"></a>
                         </figure>
                     </div>
-                </section>
-                <section>
+                    </article>
+                <article>
                     <div class="footer__logos">
                         <figure>
                             <img src="./Recursos/footer/mihoyoLogo.png" alt="mihoyoLogo">
@@ -249,7 +257,7 @@
                             <img src="./Recursos/footer/genshinLogo.svg" alt="genshinLogo">
                         </figure>
                     </div>
-                </section>
+                </article>
                 <div class="footer__fond">
                     <p>
                         | Privacy Policy | Terms of Service
@@ -273,6 +281,5 @@
                     </figure>
                 </div>
             </footer>
-        </div>
     </body>
 </html>
