@@ -32,11 +32,11 @@ header {
     background: rgba(0, 0, 0, 0.8);
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: start;
     padding: 20px 50px;
     position: fixed;
 
-    z-index: 1;
+    z-index: 10;
 }
 
 .nav__ol {
@@ -65,6 +65,21 @@ header {
     font-family: Roboto Condensed;
     font-size: 1em;
     color: #ffffff;
+}
+.button--download {
+    color: white;
+    border-radius: 9px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1em;
+     
+    background: #0183cd;
+
+    margin: 700px;
+    padding: 17px;
+    border: none;
+    outline: none;
 }
 
 /*---------------------------------Landing page---------------------------------*/
@@ -117,63 +132,48 @@ header {
 
 .landingPage__button {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
     align-items: center;
     padding: 0px 0px;
+
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
-
-.button--download {
-    color: white;
-    border-radius: 9px;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 1em;
-     
-    background: #0183cd;
-
-    padding: 17px;
-    border: none;
-    outline: none;
-}
-
 /*---------------------------------Game presentation section---------------------------------*/
-.gamePresentation {
-    width: 100%;
+.gameInformation{
     display: flex;
-
-    background: #ffffff;
-}
-
-.gamePresentation__travels {
     width: 100%;
-    height: 754.56px;
-    display: flex;
-
+    background-color: #fff;
 }
-
-.secondtitles {
-    position: absolute;
-    width: 353px;
-    height: 120px;
-    left: 878px;
-    top: 852px;
+.gameInformation__section{
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    justify-content:center;
+}
+.gameInformation__items{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px 250px;
+}
+.gameInformation__subtitles {
+    padding: 0px 0px;
+    width: 50%;
+    color: #121212;
 
     font-family: Poppins;
     font-style: normal;
     font-weight: normal;
     font-size: 2.5em;
     line-height: 60px;
-
-    color: #121212;
 }
 
-.descriptions {
-    position: absolute;
-    width: 383px;
-    height: 104px;
-    left: 878px;
-    top: 1009px;
+.gameInformation__descriptions {
+    width: 45%;
+    padding: 0px 0px;
 
     font-family: Poppins;
     font-style: normal;
@@ -183,6 +183,23 @@ header {
 
     color: #121212;
 }
+.gameInformation__button{
+    width: 35%;
+    height: 60px;
+    border-radius: 9px;
+    
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 25px;
+    padding: 17px 0px;
+    border: none;
+    outline: none;
+    background: #0183cd;
+    color: #fff;
+}
 
 /*---------------------------------News Section-----------------------------------------*/
 .newsSections{
@@ -191,7 +208,7 @@ header {
 }
 
 .news__box{
-    display: flex;
+    display: flow-root;
     background-color: rgba(0, 0, 0, 0.62);
     width: 80%;
     border-radius: 20px;
@@ -199,6 +216,8 @@ header {
 }
 
 .news__subtitle{
+    width: 100%;
+    height: 50px;
     font-size: 2em;
     font-family: Roboto;
     font-weight: lighter;
@@ -245,6 +264,25 @@ figcaption{
     font-size: 1em;
     line-height: 19px;
 }
+/*---------------------------------put your Code Section-----------------------------------------*/
+.section__code{
+    background-color: #111111;
+
+}
+.Section__codeSubTitles{
+    width: 100%;
+    height: 45px;
+    padding: 50px;
+    color: #FFFFFF;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 45px;
+    
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 /*---------------------------------Footer Section-----------------------------------------*/
 .footer{
     background-color: #111111;
@@ -269,6 +307,7 @@ figcaption{
     margin: auto;
     width: 100%;
     padding: 10px;
+    top: auto;
 }
 
 .footer__logos{
@@ -283,7 +322,7 @@ figcaption{
     width: 100%;
     height: 2.64px;
     left: 567px;
-    top: 443.65px;
+    top: 444px;
     
     background: #999999;
     transform: matrix(0, 1, 1, 0, 0, 0);
@@ -291,9 +330,10 @@ figcaption{
 
 .footer__fond{
     position: absolute;
-    width: 701px;
+    width: 45%;
     left: 1059px;
-    top: 4250px;
+    top: auto;
+    
 
     font-family: Poppins;
     font-style: normal;
@@ -316,7 +356,7 @@ figcaption{
     position: absolute;
     width: 100%;
     left: 1025px;
-    top: 4549px;
+    
     
     background: url(image.png);
 }

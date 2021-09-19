@@ -12,6 +12,10 @@
             href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;600&display=swap"
             rel="stylesheet"
         />
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+        />
     </head>
 
     <body>
@@ -33,8 +37,8 @@
                         <a
                             href="https://www.hoyolab.com/genshin/"
                             target="_blank"
-                            >HoYoLAB</a
-                        >
+                            >HoYoLAB
+                        </a>
                     </li>
                     <li class="nav__item">Recharge</li>
                 </ol>
@@ -42,8 +46,8 @@
             <button class="button--download">Download</button>
         </header>
 <!----------------------------------------------------- Here is the landing section----------------------------------------------------->
-        <article class="landingPage">
-            <section class="landingPage__text">
+        <section class="landingPage">
+            <article class="landingPage__text">
                 <p class="title">Download now available <br> for all platforms</p>
                 <p class="paragraph">
                     Genshin Impact is an
@@ -53,48 +57,66 @@
                     enemies within the world are and the rarity of rewards that
                     defeating them gives.
                 </p>
-            </section>
+            </article>
+            <div class="landingPage__button">
+                <img src="./Recursos/landing/ps5.png" alt="ps5"/>
 
-            <section class="landingPage__button">
-                <img src="./Recursos/landing/ps5.png" alt="" />
+                <img src="./Recursos/landing/appStore.png" alt="appStore"/>
 
-                <img src="./Recursos/landing/appStore.png" alt="" />
+                <img src="./Recursos/landing/google.png" alt="google"/>
 
-                <img src="./Recursos/landing/google.png" alt="" />
-
-                <img src="./Recursos/landing/windows.png" alt="" />
-            </section>
-        </article>
+                <img src="./Recursos/landing/windows.png" alt="windows"/>
+            </div>
+        </section>
 <!----------------------------------------------------- Here is the game presentation section----------------------------------------------------->
-        <div class="gamePresentation">
-            <figure class="gamePresentation__travels">
-                <img src="./Recursos/information/travels.png" alt="travels" />
-            </figure>
-            
-            <section class="gamePresentation__items">
-                <h2 class="secondtitles">An epic fantasy adventure game</h2>
-                <p class="descriptions">
+        <section class="gameInformation">
+            <article class="gameInformation__section">
+                <figure class="gameInformation__items">
+                    <img src="./Recursos/information/travels.png" alt="travels"/>
+                </figure>
+            </article>
+            <article class="gameInformation__section">
+                <h2 class="gameInformation__subtitles">An epic fantasy adventure game</h2>
+                <p class="gameInformation__descriptions">
                     Experience an immersive single player adventure. As a traveler
                     from another world, you will begin a journey to reunite with
                     your lost family member and find yourself.
-                </p>
-            </div>
-            
+                </p> 
+                <button class="gameInformation__button">Download</button>
+            </article>
         </section>
+            <!--<div class="swiper">
+                <div class="slider swiper-slide">
+                    <div class="swiper-slide">
+                    </div>
+                    //#<div class="swiper-slide">Slide 2</div>//
+                    
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>-->
+        
+    
+        <!-- <script>
+            var swiper = new Swiper(".swiper", {
+              pagination: {
+                el: ".swiper-pagination",
+              },
+            });
+          </script> -->
 <!----------------------------------------------------- Here is the News section----------------------------------------------------->
-        <div class="newsSections">
+        <section class="newsSections">
             <h2>News</h2>
-            <div class="news__box">
+            <article class="news__box">
                 <h2 class= "news__subtitle">Recently</h2>
-                <div class = "news__flexbox">
-                    <figure>
-                        <img src="Recursos/Notice/mainContent1.png" alt="aloyImage">
-                        <figcaption>
-                            Genshin Impact Character Demo - Aloy: The Mysterious Huntress
-                        </figcaption>
-                    </figure>
-                 </div>
                     <div>
+                        <div class = "news__flexbox">
+                            <figure>
+                                <img src="Recursos/Notice/mainContent1.png" alt="aloyImage">
+                                <figcaption>
+                                    Genshin Impact Character Demo - Aloy: The Mysterious Huntress
+                                </figcaption>
+                            </figure>
+                         </div>
                         <div class = "news__flexboxNew">
                             <figure>
                                 <img src="./Recursos/Notice/sC1.png" alt="baalimage">
@@ -129,29 +151,31 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
+            </article>
+        </section>
         <!----------------------------------------------------- Here is the put code section----------------------------------------------------->
-        <div class="inputs">
-            <h2>Put your code</h2>
-            <h3>Redemption code</h3>
-            <ul>
-                <li>
-                    <h4>Server</h4>
-                    <input type="text" class="input__code" />
-                </li>
-                <li>
-                    <h4>Nickname</h4>
-                    <input type="text" class="input__code" />
-                </li>
-                <li>
-                    <h4>Redeem code</h4>
-                    <input type="text" class="input__code" />
-                </li>
-                <li>
-                    <button>Exchange</button>
-                </li>
-            </ul>
+        <section class = "section__code">
+            <div class="section__inputs">
+                <h2>Put your code</h2> 
+                <h3 class = "Section__codeSubTitles">Redemption code</h3>
+                <ul>
+                    <li>
+                        <h4>Server:</h4>
+                        <input type="text" class="input__code" />
+                    </li>
+                    <li>
+                        <h4>Nickname:</h4>
+                        <input type="text" class="input__code" />
+                    </li>
+                    <li>
+                        <h4>Redeem code:</h4>
+                        <input type="text" class="input__code" />
+                    </li>
+                    <li>
+                        <button>Exchange</button>
+                    </li>
+                </ul>
+           <div>
             <h3>About the redemption code</h3>
             <ol>
                 <li>
@@ -186,6 +210,8 @@
                 </li>
             </ol>
         </div>
+           </div>
+        </section>
 <!----------------------------------------------------- Here is the Footer section----------------------------------------------------->
         <div class="footer">
             <footer> 
@@ -213,7 +239,7 @@
                             <a href="https://www.hoyolab.com/home"><img src="Recursos/footer/hoYoLab.png" alt="facebookImg"></a>
                         </figure>
                     </div>
-                </section class="footer__logobar">
+                </section>
                 <section>
                     <div class="footer__logos">
                         <figure>
