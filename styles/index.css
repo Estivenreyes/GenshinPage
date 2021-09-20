@@ -22,20 +22,32 @@ h2 {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+.row {
+    display: flex;
+}
+
 /*---------------------------------Navigation bar---------------------------------*/
 
 header {
-    width: 100%;
+    width: 100vw;
     height: 100px;
     box-sizing: border-box;
     background: rgba(0, 0, 0, 0.8);
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: space-between;
     padding: 20px 50px;
     position: fixed;
 
     z-index: 10;
+}
+
+.header--big {
+    display: flex;
+}
+
+.header--movil {
+    display: none;
 }
 
 .nav__ol {
@@ -75,7 +87,6 @@ header {
 
     background: #0183cd;
 
-    margin: 700px;
     padding: 17px;
     border: none;
     outline: none;
@@ -268,7 +279,7 @@ figcaption {
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
-    line-height: 28px;
+    line-height: 48px;
     text-align: center;
 
     color: #ffffff;
@@ -436,7 +447,7 @@ figcaption {
 
     background: #111111;
     border-radius: 5px;
-    padding: 20px;
+    padding: 20px 50px;
     border: none;
     outline: none;
 }
@@ -533,4 +544,16 @@ figcaption {
     width: 100%;
 
     background: url(image.png);
+}
+
+@media screen and (max-width: 414px) {
+
+    .header--big {
+        display: none;
+    }
+
+    .header--movil {
+        display: flex;
+    }
+
 }
