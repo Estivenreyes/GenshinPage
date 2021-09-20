@@ -308,7 +308,7 @@ figcaption {
 }
 
 .news__flexbox--grid {
-    width: 40%;
+    width: 36%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -335,7 +335,7 @@ figcaption {
 
 .news__container {
     display: flex;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
 }
 
 /*---------------------------------put your Code Section-----------------------------------------*/
@@ -416,8 +416,8 @@ figcaption {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 20px 15px;
-    margin-bottom: 40px;
+    padding: 15px 15px;
+    margin-bottom: 45px;
 
     background: #ffffff;
     border-radius: 7px;
@@ -431,6 +431,7 @@ figcaption {
     font-size: 14px;
     line-height: 21px;
     align-self: baseline;
+    padding: 4px;
 
     color: #ffffff;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -450,6 +451,8 @@ figcaption {
     padding: 20px 50px;
     border: none;
     outline: none;
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .section__instruction {
     display: flex;
@@ -463,9 +466,9 @@ figcaption {
 .img--hutao{
     position: absolute;
     right: 0;
-    top: -50px;
+    top: -62px;
     margin: 0;
-    width: 33%;
+    width: 31%;
 }
 
 /*---------------------------------Footer Section-----------------------------------------*/
