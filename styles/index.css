@@ -1,26 +1,25 @@
-*{
+* {
     box-sizing: border-box;
 }
 
 html,
-
 body {
     margin: 0;
 }
 
-h2{
+h2 {
     font: size 48px;
     display: flex;
     justify-content: center;
-    color: #FFFFFF;
+    color: #ffffff;
 
     font-family: Poppins;
     font-style: normal;
     font-weight: bold;
     font-size: 3em;
     line-height: 72px;
-    
 
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 /*---------------------------------Navigation bar---------------------------------*/
@@ -73,7 +72,7 @@ header {
     font-style: normal;
     font-weight: 300;
     font-size: 1em;
-     
+
     background: #0183cd;
 
     margin: 700px;
@@ -88,8 +87,9 @@ header {
     width: 100%;
 
     background-image: url("/Recursos/landing/landingImage.png");
+    background-repeat: no-repeat;
     height: 769px;
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 0px 50px;
@@ -140,32 +140,32 @@ header {
 
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
-.landingPage__image{
+.landingPage__image {
     display: flex;
 
     width: 7%;
 }
 /*---------------------------------Game presentation section---------------------------------*/
-.gameInformation{
+.gameInformation {
     display: flex;
     width: 100%;
     background-color: #fff;
 }
-.gameInformation__section{
+.gameInformation__section {
     display: flex;
     flex-direction: column;
     width: 55%;
-    justify-content:center;
+    justify-content: center;
     padding: 0px 30px;
 }
-.gameInformation__section2{
+.gameInformation__section2 {
     display: flex;
     flex-direction: column;
     width: 55%;
-    justify-content:flex-start;
+    justify-content: flex-start;
     padding: 150px 30px;
 }
-.gameInformation__items{
+.gameInformation__items {
     width: 50%;
     display: flex;
     flex-direction: row;
@@ -196,42 +196,46 @@ header {
 
     color: #121212;
 }
-.gameInformation__button{
+.gameInformation__button {
     width: 35%;
     height: 60px;
     border-radius: 9px;
-    
+
     font-family: Poppins;
     font-style: normal;
     font-weight: normal;
     font-size: 1em;
     line-height: center;
-    
+
     background: #0183cd;
     color: #fff;
     padding: 17px 0px;
+    margin-top: 25px;
     border: none;
     outline: none;
-    
 }
 
 /*---------------------------------News Section-----------------------------------------*/
-.newsSections{
+.newsSections {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     width: 100%;
-    background-image: url("/Recursos/Notice/backgroundNew.png");
+    justify-content: center;
+    padding: 70px 0px;
+    background-image: url("/Recursos/Notice/genshinBeach.png");
+    background-repeat: no-repeat;
 }
 
-.news__box{
+.news__box {
     background-color: rgba(0, 0, 0, 0.62);
     width: 80%;
     border-radius: 20px;
+    justify-content: center;
     margin: auto;
 }
 
-.news__subtitle{
+.news__subtitle {
     width: 100%;
     height: 50px;
     font-size: 2em;
@@ -239,45 +243,73 @@ header {
     font-weight: lighter;
     justify-content: left;
     padding: 50px;
-    
 }
-.news__figcaption{
+
+figcaption {
     width: 100%;
-    margin: 0px;
+    height: 97px;
+    position: absolute;
+    bottom: 5px;
+
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
 
     background: rgb(0 0 0 / 65%);
-    color: #FFF;
-    padding: 40px;
-    border-radius: 0 0 20px 28px;
-}
-figcaption{
-    width: 100%;
-    margin: 0px;
-
-    background: rgb(0 0 0 / 65%);
-    color: #FFF;
-    padding: 40px;
-    border-radius: 0 0 20px 28px;
+    color: #fff;
+    padding: 20px 10px;
+    border-radius: 0 0 10px 10px;
 }
 
-.news__flexbox{
+.figcaption--big {
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+
+    color: #ffffff;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.news__flexbox {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    padding: 0px 0px;
 
     font-family: Roboto Condensed;
     font-style: normal;
     font-weight: bold;
     font-size: 30px;
     line-height: 35px;
-    
 }
 
-.news__flexboxNew{
-    width: 20%;
+.news__flexbox figure {
+    margin: 0px;
+    position: relative;
+}
+
+.news__flexbox--grid {
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.news__flexboxNew {
+    width: fit-content;
+    height: fit-content;
     margin: 0px;
     padding: 0px 0px;
+    position: relative;
 
     font-family: Roboto Condensed;
     font-style: normal;
@@ -286,53 +318,152 @@ figcaption{
     line-height: 19px;
 }
 
-/*---------------------------------put your Code Section-----------------------------------------*/
-.section__code{
+.news__flexboxNew figure {
+    margin: 0px;
+}
+
+.news__container {
     display: flex;
-    justify-content: center;
+    padding-bottom: 50px;
+}
+
+/*---------------------------------put your Code Section-----------------------------------------*/
+.section__code {
+    display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    background-color: #111111;
-    
-}
-
-.section__inputs{
+    justify-content: center;
     width: 100%;
-    background-image: url(../Recursos/RedemtionCode/Hutao.png);
+    background-color: #111111;
+    padding: 70px 0px;
+
+    background-image: url("../Recursos/RedemtionCode/Hutao.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 35%;
+}
+
+.section__code__container{
+    display: flex;
+    background-color: #f3efec;
+    width: 70%;
+    border-radius: 20px;
+    justify-content: center;
+    margin: auto;
+}
+
+.section__items {
+
+    background-image: url("../Recursos/RedemtionCode/codeimage.png");
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 50px;
 
 }
 
-.Section__codeSubTitles{
+.Section__codeSubTitles {
     width: 100%;
     height: 45px;
     padding: 50px;
-    color: #FFFFFF;
+    color: #ffffff;
 
     font-family: Poppins;
     font-style: normal;
     font-weight: bold;
     font-size: 30px;
     line-height: 45px;
-    
+
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+.Section__codeSubTitles--black {
+    width: 100%;
+    height: 45px;
+    padding: 50px;
+    color: #121212;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 45px;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.font {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+
+    color: #121212;
+}
+.section__input {
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px 40px;
+
+    background: #ffffff;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+}
+.section__h4 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+
+    color: #ffffff;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.section__buttonNew {
+    width: 15%;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 21px;
+
+    color: #f4c780;
+
+    background: #111111;
+    border-radius: 5px;
+    padding: 20px 0px;
+    margin: 30px;
+    border: none;
+    outline: none;
+}
+.section__instruction {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: right;
+    width: 50%;
+    padding: 50px;
+}
 /*---------------------------------Footer Section-----------------------------------------*/
-.footer{
+.footer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    
+
     background-color: #111111;
     width: 100%;
 }
-.footer__sectionbar{
+.footer__sectionbar {
     width: 100%;
 
     background: #999999;
     transform: matrix(1, 0, 0, -1, 0, 0);
 }
 
-.footer__image{
+.footer__image {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -341,7 +472,7 @@ figcaption{
     padding: 0px 10px;
 }
 
-.footer__elemts{
+.footer__elemts {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -349,7 +480,7 @@ figcaption{
     width: 100;
 }
 
-.footer__logos{
+.footer__logos {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -363,7 +494,7 @@ figcaption{
     background: #999999;
     transform: matrix(0, 1, 1, 0, 0, 0);
 } */
-.footer__fond{
+.footer__fond {
     width: 45%;
     padding: 50px 0px;
 
@@ -372,19 +503,19 @@ figcaption{
     font-weight: normal;
     font-size: 1em;
     line-height: 27px;
-    
-    color: #6C7D7D;
+
+    color: #6c7d7d;
 }
 
-.footer__fond--copy{
-    color: #F0FFFF;
+.footer__fond--copy {
+    color: #f0ffff;
 }
 
-.footer__fond--ps5{
+.footer__fond--ps5 {
     font-size: 0.9em;
 }
 
-.footer__pegi{
+.footer__pegi {
     flex-direction: row;
     flex-wrap: wrap;
     padding: 0px 940px;
