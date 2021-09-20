@@ -545,8 +545,6 @@ figcaption {
     flex-wrap: wrap;
     padding: 0px 940px;
     width: 100%;
-
-    background: url(image.png);
 }
 
 @media screen and (max-width: 414px) {
