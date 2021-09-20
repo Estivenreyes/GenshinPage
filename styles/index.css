@@ -97,7 +97,7 @@ header {
 .landingPage {
     width: 100%;
 
-    background-image: url("/Recursos/landing/landingImage.png");
+    background-image: url("../Recursos/landing/landingImage.png");
     background-repeat: no-repeat;
     height: 769px;
     display: flex;
@@ -234,7 +234,7 @@ header {
     width: 100%;
     justify-content: center;
     padding: 70px 0px;
-    background-image: url("/Recursos/news/genshinBeach.png");
+    background-image: url("../Recursos/news/genshinBeach.png");
     background-repeat: no-repeat;
 }
 
