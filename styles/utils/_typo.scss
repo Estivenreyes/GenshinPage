@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+
+$Poppins: "Poppins", sans-serif;
+$Bold: 700;
+$light: 300;
+
+$FStext: 22px;
+$FStitle: 48px;
+$FSmedium: 30px;
+$FSsmall: 18px;
+
+h2 {
+    font: size $FStitle;
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+
+    font-family: $Poppins;
+    font-style: normal;
+    font-weight: $Bold;
+    font-size: 3em;
+    line-height: 72px;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}

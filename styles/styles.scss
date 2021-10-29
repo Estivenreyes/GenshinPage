@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.row {
+    display: flex;
+}
+
+/*---------------------------------Var's---------------------------------*/
+$PrimaryColor: #0183cd;
+$SecondaryColor: #ffa84e;
+$Bg: #111111;
+$White: #ffffff;
+
+/*---------------------------------Import's---------------------------------*/
+
+@import "./utils/typo";
+@import "./components/btn";
+@import "./components/nav";
+@import "./components/productCard";
+@import "./screens/store";

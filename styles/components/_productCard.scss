@@ -1,0 +1,40 @@
+.productCard {
+    width: 360px;
+    height: 412px;
+    border-radius: 9px;
+    padding: 30px;
+    margin-bottom: 30px;
+
+    color: $Bg;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: $White;
+
+    &__name {
+        width: 70%;
+        text-align: center;
+        font-family: $Poppins;
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+    &__img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    &__addBtn {
+        font-family: $Poppins;
+        font-size: 18px;
+        line-height: 27px;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}

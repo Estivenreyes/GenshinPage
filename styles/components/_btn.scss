@@ -1,0 +1,20 @@
+.btn {
+    color: $White;
+    border-radius: 5px;
+    width: 70%;
+    font-family: $Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1em;
+
+    background: $PrimaryColor;
+
+    padding: 20px;
+    border: none;
+    outline: none;
+
+    &:hover {
+        cursor: pointer;
+        background: darken($color: $PrimaryColor, $amount: 10);
+    }
+}
