@@ -47,7 +47,7 @@
     <article class="store">
 
         <section class="store__banner">
-            <img src="./recursos/recharge Cristal Genesis/banner.png" alt="">
+            <img src="./recursos/recharge Cristal Genesis/banner.png" alt="Banner">
         </section>
 
         <section class="store__filters">
@@ -61,7 +61,16 @@
                     <option value="Skin">Skin</option>
                     <option value="battlePass">Battle Pass</option>
                 </select>
+
+                <label for="Store__orderBy"></label>
+                <select class="store__select" name="orderBy" id="orderBy">
+                    <option value="">Price</option>
+                    <option value="">higher to lower</option>
+                    <option value="">lower to higher</option>
+                </select>
             </div>
+
+
         </section>
 
         <article class="store__container">
@@ -149,7 +158,7 @@
             </section>
 
         </article>
-        <div class="products" id="products"></div>
+
     </article>
     <script src="./js/store.js"></script>
 </body>

@@ -185,10 +185,24 @@ filterByCategory.addEventListener("change", e => {
     const category = filterByCategory.value;
 
     productsSection.innerHTML = "";
-    const filteredByCategory = products.filter((product) => product.
-    type === category);
 
-    filteredByCategory.forEach(product =>{
+    let filteredProductsByCategory;
+
+    if(category !== ""){
+        filteredProductsByCategory = products.filter((product) => product.
+        type === "category");
+    } else {
+        filteredProductsByCategory = products;
+    }
+
+    // const filteredProductsByCategory = products.filter((product) => product.
+    // type === category);
+
+    filteredProductsByCategory.forEach(product =>{
         productTemplate(product);
     });
+});
+
+products.forEach(product =>{
+    productTemplate(product);
 });

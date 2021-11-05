@@ -8,7 +8,6 @@
 
     &__banner {
         width: 100%;
-        height: 656px;
     }
 
     &__container {
@@ -16,15 +15,22 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        margin: 50px;
     }
     &__filters {
-        width: 66%;
+        width: 67%;
         display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
         padding: 20px;
         margin: 20px;
     }
+
     &__select {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
         font-family: Poppins;
         font-style: normal;
         font-weight: normal;

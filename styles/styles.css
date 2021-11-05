@@ -114,22 +114,26 @@ h2 {
 }
 .store__banner {
   width: 100%;
-  height: 656px;
 }
 .store__container {
   width: 65%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin: 50px;
 }
 .store__filters {
-  width: 66%;
+  width: 67%;
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   padding: 20px;
   margin: 20px;
 }
 .store__select {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   font-family: Poppins;
   font-style: normal;
   font-weight: normal;
