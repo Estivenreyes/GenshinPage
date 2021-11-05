@@ -121,4 +121,25 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+.store__filters {
+  width: 66%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  margin: 20px;
+}
+.store__select {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 42px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #fff;
+}
+.store__select option {
+  color: #111111;
 }/*# sourceMappingURL=styles.css.map */
