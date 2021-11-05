@@ -1,5 +1,5 @@
 .productCard {
-    width: 360px;
+    width: 30%;
     height: 412px;
     border-radius: 9px;
     padding: 30px;
@@ -23,7 +23,7 @@
     }
 
     &__img {
-        width: 200px;
+        width: 60%;
         height: 200px;
         object-fit: cover;
     }
@@ -31,7 +31,7 @@
     &__addBtn {
         font-family: $Poppins;
         font-size: 18px;
-        line-height: 27px;
+        line-height: 20px;
 
         &:hover {
             cursor: pointer;

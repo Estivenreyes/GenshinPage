@@ -70,7 +70,7 @@ h2 {
 }
 
 .productCard {
-  width: 360px;
+  width: 30%;
   height: 412px;
   border-radius: 9px;
   padding: 30px;
@@ -90,7 +90,7 @@ h2 {
   line-height: 27px;
 }
 .productCard__img {
-  width: 200px;
+  width: 60%;
   height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -98,7 +98,7 @@ h2 {
 .productCard__addBtn {
   font-family: "Poppins", sans-serif;
   font-size: 18px;
-  line-height: 27px;
+  line-height: 20px;
 }
 .productCard__addBtn:hover {
   cursor: pointer;
@@ -117,7 +117,7 @@ h2 {
   height: 656px;
 }
 .store__container {
-  width: 1230px;
+  width: 65%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
