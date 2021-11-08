@@ -1,10 +1,14 @@
+a {
+    text-decoration: none !important;
+}
 .productCard {
     width: 30%;
     height: 412px;
     border-radius: 9px;
     padding: 30px;
     margin-bottom: 30px;
-
+    margin: 20px;
+    text-decoration: none;
     color: $Bg;
 
     display: flex;
@@ -37,4 +41,8 @@
             cursor: pointer;
         }
     }
+}
+
+.product__description {
+    text-decoration: none !important;
 }

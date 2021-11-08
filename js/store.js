@@ -50,7 +50,7 @@ const products = [
         type: "Cristal",
     },
     {
-        id: 7,
+        id: 6,
         name: "Cristal Genesis",
         price: 99.99, 
         image: "./recursos/recharge Cristal Genesis/GC6.png",
@@ -59,7 +59,7 @@ const products = [
         type: "Cristal",
     },
     {
-        id: 8,
+        id: 7,
         name: "Lunar Blessing",
         price: 4.99, 
         image: "./recursos/recharge Cristal Genesis/lunarPass.png",
@@ -68,7 +68,7 @@ const products = [
         type: "Battle pass",    
     },
     {
-        id: 9,
+        id: 8,
         name: "Battle Pass/Gnosis Hymn - Basic",
         price:  9.99, 
         image: "./recursos/recharge Cristal Genesis/battlePass.png",
@@ -77,7 +77,7 @@ const products = [
         type: "Battle pass",    
     },
     {
-        id: 10,
+        id: 9,
         name: "Battle Pass/Gnosis Hymn - Advance",
         price: 19.99, 
         image: "./recursos/recharge Cristal Genesis/battlePass.png",
@@ -86,7 +86,7 @@ const products = [
         type: "Battle pass"
     },
     {
-        id: 11,
+        id: 10,
         name: "Sea Breeze Dandelion",
         price: 1600, 
         image: "./recursos/recharge Cristal Genesis/jeanskin.png",
@@ -96,7 +96,7 @@ const products = [
         type: "Skin",
     },
     {
-        id: 12,
+        id: 11,
         name: "SummerTime Sparkle",
         price: 1600, 
         image: "./recursos/recharge Cristal Genesis/barbaraSkin.png",
@@ -110,19 +110,19 @@ const products = [
 const cart = [
 ];
 
-const productsSection = document.getElementById("products");
 
-const product = document.createElement("a");
-product.className = "product";
+const productsSection = document.querySelector(".store__container");
 
-const producTamplate = (item) => {
 
-    product.setAttribute("product", `./product.html?id=${item.id}`);
+const productTemplate = (item) => {
     
-    const product = document. createElement("a");
-    produc.className = "product";
+    const product = document. createElement("div");
+    product.className = "productCard";
+    const link = document.createElement("a");
+    link.setAttribute("href", `./product.html?id=${item.id}`);
+    link.setAttribute("product", `./product.html?id=${item.id}`);
 
-    product.setAttribute("href", `./product.html?id=${item.id}`);
+    product.appendChild(link)
 
     let tagHtml;
     if(item.isRecommended){
@@ -145,20 +145,23 @@ const producTamplate = (item) => {
     }
 
     product.innerHTML = `
-    <img src="${item.image}"alt ="${item.name}" class="product__image">
+    <img src="${item.image}"alt ="${item.name}" class="productCard__img">
     <div class = "product__description">
     ${tagHtml}
-    <h3 class = "product__price">$ ${item.price}</h3>
-    <h2 class = "product__name">${item.name}</h2>
+    <p class = "productCard__name">${item.name}</p>
+    <btn class = "btn">$ ${item.price}</btn>
     ${buttonHtml}
     </div>
+    <p class = "productCard__addBtn"></p>
     `;
 
+    
     productsSection.appendChild(product);
+    
 
     const productCartButton = product.querySelector(".product__cart");
 
-    productCartButtom.addEventListener("click", e => {
+    productCartButton.addEventListener("click", e => {
     e.preventDefault();
     const productAdded ={
         id: item.id,
@@ -172,11 +175,8 @@ const producTamplate = (item) => {
     productCartButton.setAttribute("disabled", true);
     });
 
-    products.forEach(product =>{
-        productTemplate(product);
-    });
+   
 };
-
 
 
 const filterByCategory = document.getElementById("categories");
