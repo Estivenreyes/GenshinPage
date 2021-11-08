@@ -124,6 +124,7 @@ const productTemplate = (item) => {
 
     product.appendChild(link)
 
+    //logic of us tag, recomend button or best seller 
     let tagHtml;
     if(item.isRecommended){
     tagHtml = `<span class="product__tag product__tag--recommended">Recomended</span>`;
@@ -155,10 +156,10 @@ const productTemplate = (item) => {
     <p class = "productCard__addBtn"></p>
     `;
 
-    
+    //ading all of us product in the container
     productsSection.appendChild(product);
     
-
+    //Finding the button in the shopping cart the product
     const productCartButton = product.querySelector(".product__cart");
 
     productCartButton.addEventListener("click", e => {
