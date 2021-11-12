@@ -7,7 +7,7 @@
     padding: 280px 0px;
     color: $White;
 
-    background-image: url(/recursos/loginandregister/Zhongli.png);
+    background-image: url(/recursos/loginandregister/Register.png);
 
     &__auth {
         position: static;
@@ -71,7 +71,8 @@
         font-weight: 300;
         font-size: 1em;
         font-size: 13px;
-        padding: 20px;
+        padding: 0px;
+        padding-top: 25px;
         text-align: center;
     }
 
@@ -80,7 +81,7 @@
     }
 
     &__text {
-        display: static;
+        display: flex;
         text-align: center;
 
         font-family: Poppins;
@@ -88,7 +89,7 @@
         font-weight: 300;
         font-size: 1em;
         font-size: 13px;
-        margin: 20px;
+        margin: 5px;
 
         color: $White;
     }
@@ -101,9 +102,21 @@
         font-size: 1em;
 
         background: #0183cd;
-        margin: 10px;
+        margin: 30px;
         padding: 15px 70px;
         border: none;
         outline: none;
     }
+}
+
+.authL {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    padding: 280px 0px;
+    color: $White;
+
+    background-image: url(/recursos/loginandregister/Login.png);
 }

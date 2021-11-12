@@ -11,18 +11,23 @@
 </head>
 
 <body>
-    <div class="authG">
-        <form id="login" class="auth">
-            <div class="auth__login">
-                <h1 class="auth__title">¡Welcome!</h1>
-                <input type="email" placeholder="Email" name="email">
-                <input type="password" placeholder="password" name="password">
+    <div class="authL">
+        <form id="login" class="authG__auth">
+            <div class="authG__register">
+                <figure class="authG__userImg">
+                    <img src="./recursos/loginandregister/User.png" alt="UserImage">
+                </figure>
+                <h1 class="authG__title">¡Welcome!</h1>
+                <input class="authG__input" type="email" placeholder="Email" name="email">
+                <input class="authG__input" type="password" placeholder="password" name="password">
+                <p class="authG__text">if you don’t have account register⠀<a href="./register.html"><b>here</b></a></p>
+                <button class="authG__download">Login</button>
             </div>
-            <p>if you don’t have account register <a href="./register.html"><b>here</b></a></p>
+
         </form>
     </div>
 
-
+    <script type="module" src="./js/auth.js"></script>
 </body>
 
 </html>

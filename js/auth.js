@@ -32,26 +32,42 @@ const createUser = async (email, password) => {
   }
 }
 
-const login = (email, password) => {
+const login =  async (email, password) => {
   try {
-    await signInWithEmailAndPassword(auth,email,password);
+    const user = await signInWithEmailAndPassword(auth,email,password);
     console.log(user);
-  } catch (error) {
+  } catch (e) {
     console.log(e.code);
+
+    if (e.code === "auth/user-not-found") {
+      console.log("The user is not registered in our database...");
+    }
   }
   
 }
 
-registerForm.addEventListener("submit",e => {
+registerForm.addEventListener("submit", e => {
   e.preventDefault();
 
-  const name = registerForm.name.value
+  const name = registerForm.name.value;
   const email = registerForm.email.value;
   const password = registerForm.password.value;
 
   if (email && password){
     createUser(email, password);
   }else{
-    console.log("Please complete all required fields...")
+    console.log("Please complete all required fields...");
   }
-})
+});
+
+loginForm.addEventListener("submit", e =>{
+  e.preventDefault();
+  const email = loginForm.email.value;
+  const password = loginForm.password.value;
+
+  if (email && password){
+    login(email, password);
+  }else{
+    console.log("Please complete all required fields...");
+  }
+});
