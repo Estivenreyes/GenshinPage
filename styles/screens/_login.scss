@@ -1,0 +1,109 @@
+.authG {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    padding: 280px 0px;
+    color: $White;
+
+    background-image: url(/recursos/loginandregister/Zhongli.png);
+
+    &__auth {
+        position: static;
+        width: 60%;
+        background: rgba(0, 0, 0, 0.9);
+        border-radius: 30px;
+    }
+
+    &__userImg {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 8%;
+
+        padding-top: 70px;
+        margin: 0px 0px;
+    }
+
+    &__register {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    &__title {
+        font-family: Roboto Condensed;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 35px;
+        color: $White;
+        text-align: center;
+    }
+
+    &__input {
+        width: 25%;
+        color: black;
+        border-radius: 7px;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 1em;
+        font-size: 14px;
+
+        background: $White;
+
+        margin: 10px;
+        padding: 10px;
+        border: none;
+        outline: none;
+    }
+    &__checkbox {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: row;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 1em;
+        font-size: 13px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    &--colorchange {
+        color: $PrimaryColor;
+    }
+
+    &__text {
+        display: static;
+        text-align: center;
+
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 1em;
+        font-size: 13px;
+        margin: 20px;
+
+        color: $White;
+    }
+    &__download {
+        color: white;
+        border-radius: 9px;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 1em;
+
+        background: #0183cd;
+        margin: 50px;
+        padding: 20px;
+        border: none;
+        outline: none;
+    }
+}

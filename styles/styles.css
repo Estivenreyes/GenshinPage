@@ -156,4 +156,100 @@ a {
 }
 .store__select option {
   color: #111111;
+}
+
+.authG {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  padding: 280px 0px;
+  color: #ffffff;
+  background-image: url(/recursos/loginandregister/Zhongli.png);
+}
+.authG__auth {
+  position: static;
+  width: 60%;
+  background: rgba(0, 0, 0, 0.9);
+  border-radius: 30px;
+}
+.authG__userImg {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 8%;
+  padding-top: 70px;
+  margin: 0px 0px;
+}
+.authG__register {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+}
+.authG__title {
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 35px;
+  color: #ffffff;
+  text-align: center;
+}
+.authG__input {
+  width: 25%;
+  color: black;
+  border-radius: 7px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1em;
+  font-size: 14px;
+  background: #ffffff;
+  margin: 10px;
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+.authG__checkbox {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1em;
+  font-size: 13px;
+  padding: 20px;
+  text-align: center;
+}
+.authG--colorchange {
+  color: #0183cd;
+}
+.authG__text {
+  display: static;
+  text-align: center;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1em;
+  font-size: 13px;
+  margin: 20px;
+  color: #ffffff;
+}
+.authG__download {
+  color: white;
+  border-radius: 9px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1em;
+  background: #0183cd;
+  margin: 50px;
+  padding: 20px;
+  border: none;
+  outline: none;
 }/*# sourceMappingURL=styles.css.map */
