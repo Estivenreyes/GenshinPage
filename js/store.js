@@ -7,7 +7,7 @@ const products = [
         isRecomended: true,
         isBestSeller: false,
         description: "This coin is the Genesis Crystal, which can be exchanged 1: 1 for Protogems (60 Genesis Crystal = 60 Protogem).",
-        type: "Cristal",
+        type: "cristal",
     },
     {
         id: 2,
@@ -17,7 +17,7 @@ const products = [
         isRecomended: true,
         isBestSeller: false,
         description: "This coin is the GenesisCrystal, which can be exchanged 1: 1 for Protogems (300 GenesisCrystal = 300 Protogem)",
-        type: "Cristal",
+        type: "cristal",
     },
     {
         id: 3,
@@ -27,7 +27,7 @@ const products = [
         isRecomended: true,
         isBestSeller: false,
         description: "This coin is the GenesisCrystal, which can be exchanged 980: 980 for Protogems (980 GenesisCrystal = 980 Protogem)",
-        type: "Cristal",
+        type: "cristal",
     },
     {
         id: 4,
@@ -37,7 +37,7 @@ const products = [
         isRecomended: true,
         isBestSeller: false,
         description: "This coin is the GenesisCrystal, which can be exchanged 1: 1 for Protogems (300 GenesisCrystal = 300 Protogem)",
-        type: "Cristal",
+        type: "cristal",
     },
     {
         id: 5,
@@ -47,7 +47,7 @@ const products = [
         isRecomended: true,
         isBestSeller: false,
         description: "This coin is the GenesisCrystal, which can be exchanged 1: 1 for Protogems (300 GenesisCrystal = 300 Protogem)",
-        type: "Cristal",
+        type: "cristal",
     },
     {
         id: 6,
@@ -56,7 +56,7 @@ const products = [
         image: "./recursos/recharge Cristal Genesis/GC6.png",
         isRecomended: true,
         isBestSeller: false,
-        type: "Cristal",
+        type: "cristal",
     },
     {
         id: 7,
@@ -65,7 +65,7 @@ const products = [
         image: "./recursos/recharge Cristal Genesis/lunarPass.png",
         isRecomended: false,
         isBestSeller: true,
-        type: "Battle pass",    
+        type: "battlePass",    
     },
     {
         id: 8,
@@ -74,7 +74,7 @@ const products = [
         image: "./recursos/recharge Cristal Genesis/battlePass.png",
         isRecomended: false,
         isBestSeller: true,
-        type: "Battle pass",    
+        type: "battlePass",    
     },
     {
         id: 9,
@@ -83,7 +83,7 @@ const products = [
         image: "./recursos/recharge Cristal Genesis/battlePass.png",
         isRecomended: true,
         isBestSeller: false,
-        type: "Battle pass"
+        type: "battlePass"
     },
     {
         id: 10,
@@ -93,7 +93,7 @@ const products = [
         isRecomended: true,
         isBestSeller: false,
         description: "Jean’s summer wear. Light and cool, but no less elegant for it. A perfect match for a seaside trip.",
-        type: "Skin",
+        type: "skin",
     },
     {
         id: 11,
@@ -103,7 +103,7 @@ const products = [
         isRecomended: true,
         isBestSeller: false,
         description: "Barbara’s beach attire. The lovely short skirt brims with summer vitality and carries the fresh air of the ocean.",
-        type: "Skin",
+        type: "skin",
     },
 ];
 
@@ -116,20 +116,16 @@ const productsSection = document.querySelector(".store__container");
 
 const productTemplate = (item) => {
     
-    const product = document. createElement("div");
+    const product = document. createElement("a");
     product.className = "productCard";
-    const link = document.createElement("a");
-    link.setAttribute("href", `./product.html?id=${item.id}`);
-    link.setAttribute("product", `./product.html?id=${item.id}`);
-
-    product.appendChild(link)
+    product.setAttribute("href", `./product.html?id=${item.id}`);
 
     //logic of us tag, recomend button or best seller 
     let tagHtml;
     if(item.isRecommended){
-    tagHtml = `<span class="product__tag product__tag--recommended">Recomended</span>`;
+    tagHtml = `<span class="product_tag product_tag--recommended">Recomended</span>`;
     } else if (item.isRecommended){
-    tagHtml = `<span class="product__tag product__tag--best-seller">Best seller</span>`;
+    tagHtml = `<span class="product_tag product_tag--best-seller">Best seller</span>`;
     }else{
     tagHtml = "";
     }   
@@ -138,7 +134,7 @@ const productTemplate = (item) => {
     let buttonHtml;
 
     if(isAdded){
-    buttonHtml = `<buttom class="product__cart" disabled>Productio añadido
+    buttonHtml = `<button class="product__cart" disabled>Productio añadido
     </buttom>`;
     } else {
     buttonHtml = `<button class="product__cart">Add in the shopping car
@@ -184,6 +180,7 @@ const filterByCategory = document.getElementById("categories");
 
 filterByCategory.addEventListener("change", e => {
     const category = filterByCategory.value;
+    console.log(category);
 
     productsSection.innerHTML = "";
 
@@ -191,7 +188,7 @@ filterByCategory.addEventListener("change", e => {
 
     if(category !== ""){
         filteredProductsByCategory = products.filter((product) => product.
-        type === "category");
+        type === category);
     } else {
         filteredProductsByCategory = products;
     }
