@@ -1,0 +1,96 @@
+.view {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+
+    background-image: url(/recursos/rechargeCristalGenesis/viewProducts/backgroundview1.png);
+
+    &__section {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        border-radius: 32px;
+        margin: 100px;
+        align-content: center;
+        justify-content: center;
+
+        background-color: white;
+    }
+
+    &__image {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-top: 100px;
+    }
+
+    &__title {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 38px;
+        line-height: 57px;
+        color: #111111;
+    }
+
+    &__buttonC {
+        color: white;
+        width: 25%;
+        border-radius: 9px;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 36px;
+        line-height: 54px;
+
+        background: #0183cd;
+        margin: 30px;
+        padding: 30px 30px;
+        border: none;
+        outline: none;
+    }
+
+    &__article {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 50%;
+        background-color: #111111;
+        border-radius: 32px;
+        align-content: flex-end;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+    }
+
+    &__text {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 22px;
+        line-height: 33px;
+        padding-left: 30px;
+        padding-right: 30px;
+        color: white;
+    }
+    &__buttonD {
+        color: white;
+        border-radius: 9px;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 32px;
+
+        background: #0183cd;
+        margin: 30px;
+        padding: 15px 70px;
+        border: none;
+        outline: none;
+    }
+}

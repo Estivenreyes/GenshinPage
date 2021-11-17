@@ -168,7 +168,7 @@ const productTemplate = (item) => {
     };
 
     cart.push(productAdded);
-
+    console.log(cart);
     productCartButton.setAttribute("disabled", true);
     });
 

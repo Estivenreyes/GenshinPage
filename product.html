@@ -5,32 +5,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/index.css" />
-    <link rel="stylesheet" href="./styles/styles.css" />
-    <link rel="stylesheet" href="./styles/screens/_login.scss">
-    <title>Genshin Register</title>
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>ProductView</title>
 </head>
 
 <body>
-    <div class="authG">
-        <form id="register" class="authG__auth">
-            <div class="authG__register">
-                <figure class="authG__userImg">
-                    <img src="./recursos/loginandregister/User.png" alt="UserImage">
-                </figure>
-                <h1 class="authG__title">¡Register!</h1>
-                <input class="authG__input" type="email" placeholder="Email" name="email">
-                <input class="authG__input" type="text" placeholder="Nickname" name="name">
-                <input class="authG__input" type="password" placeholder="password" name="password">
-                <input class="authG__input" type="password" placeholder="Confirm password" name="Confirmpassword">
-                <div class="authG__checkbox">
-                    <input type="checkbox" id="cbox1" value="first_checkbox"> I have read and accepted the⠀<b>Terms of
-                        Service</b>⠀and⠀<b>Privacy Policy</b>
-                </div>
-                <p class="authG__text">if you have account login⠀<a href="./login.html"><b>here</b></a></p>
-                <button class="authG__download">Sign in</button>
-            </div>
-        </form>
+    <div class="view">
+        <section class="view__section">
+            <figure class="view__image">
+                <img src="./recursos/rechargeCristalGenesis/viewProducts/cg1.png" alt="cristalview">
+            </figure>
+            <h2 class="view__title">Genesis Cristal x 60</p>
+                <button class="view__buttonC">US$ 0,99</button>
+        </section>
+        <article class="view__article">
+            <p class="view__text">
+                This coin is the Genesis Crystal, which can be exchanged 1: 1 for Protogems (1 Genesis Crystal =
+                1
+                Protogem).
+            </p>
+            <p class="view__text">
+                You can also buy exclusive offers from the store, which will usually have certain advantages
+                over
+                purchases made with the rest of the game's currencies.
+            </p>
+            <p class="view__text">
+                This crystal has the value of 60 Genesis Crystals do you want to recharge this vaule?
+            </p>
+            <p class="view__text">Cantidad:</p>
+            <button class="view__buttonD">Buy</button>
+        </article>
     </div>
 
     <footer class="footer">
@@ -101,8 +106,6 @@
             </figure>
         </div>
     </footer>
-
-    <script type="module" src="./js/auth.js"></script>
 </body>
 
 </html>
