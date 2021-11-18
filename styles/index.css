@@ -98,6 +98,7 @@ h2 {
     width: 100%;
 
     background-image: url("../recursos/landing/landingImage.png");
+    background-size: cover;
     background-repeat: no-repeat;
     height: 769px;
     display: flex;
@@ -235,6 +236,7 @@ h2 {
     justify-content: center;
     padding: 70px 0px;
     background-image: url("../recursos/news/genshinBeach.png");
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
@@ -363,6 +365,8 @@ figcaption {
 
 .section__items {
     background-image: url("../recursos/redemtionCode/codeimage.png");
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     width: 50%;

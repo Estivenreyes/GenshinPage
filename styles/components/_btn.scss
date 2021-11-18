@@ -6,6 +6,7 @@
     font-style: normal;
     font-weight: 300;
     font-size: 1em;
+    text-align: center;
 
     background: $PrimaryColor;
 
@@ -16,5 +17,21 @@
     &:hover {
         cursor: pointer;
         background: darken($color: $PrimaryColor, $amount: 10);
+    }
+
+    &--1 {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 27px;
+        padding: 10px;
+
+        background-color: transparent;
+        border: 0 transparent;
+
+        &:hover {
+            color: $Bg;
+        }
     }
 }

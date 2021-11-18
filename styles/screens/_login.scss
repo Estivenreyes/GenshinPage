@@ -8,6 +8,8 @@
     color: $White;
 
     background-image: url(/recursos/loginandregister/Register.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 
     &__auth {
         position: static;
