@@ -45,29 +45,33 @@ const login =  async (email, password) => {
   }
   
 }
-///
-registerForm.addEventListener("submit", e => {
-  e.preventDefault();
 
-  const name = registerForm.name.value;
-  const email = registerForm.email.value;
-  const password = registerForm.password.value;
+if(registerForm){
+  registerForm.addEventListener("submit", e => {
+    e.preventDefault();
+  
+    const name = registerForm.name.value;
+    const email = registerForm.email.value;
+    const password = registerForm.password.value;
+  
+    if (email && password){
+      createUser(email, password);
+    }else{
+      console.log("Please complete all required fields...");
+    }
+  });
+}
 
-  if (email && password){
-    createUser(email, password);
-  }else{
-    console.log("Please complete all required fields...");
-  }
-});
-
-loginForm.addEventListener("submit", e =>{
-  e.preventDefault();
-  const email = loginForm.email.value;
-  const password = loginForm.password.value;
-
-  if (email && password){
-    login(email, password);
-  }else{
-    console.log("Please complete all required fields...");
-  }
-});
+if(loginForm){
+  loginForm.addEventListener("submit", e =>{
+    e.preventDefault();
+    const email = loginForm.email.value;
+    const password = loginForm.password.value;
+  
+    if (email && password){
+      login(email, password);
+    }else{
+      console.log("Please complete all required fields...");
+    }
+  });
+}

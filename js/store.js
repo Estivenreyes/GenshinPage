@@ -154,7 +154,7 @@ const productTemplate = (item) => {
 
     let promotion;
     if(item.isPromotional){
-     promotion =    `<h1>Buy First</h1>`
+     promotion =    `<h1 class="productCard__buyFirst">Buy First</h1>`
     }
 
     if(item.isPromotional == false){

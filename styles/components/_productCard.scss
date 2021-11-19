@@ -26,6 +26,26 @@ a {
         line-height: 27px;
     }
 
+    &__buyFirst {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 50%;
+        height: 25px;
+        text-align: center;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        align-content: center;
+        justify-content: center;
+        line-height: 36px;
+        color: $White;
+        background-color: $SecondaryColor;
+        padding: 20px;
+        margin: 0px;
+    }
+
     &__img {
         width: 50%;
         height: 150px;
