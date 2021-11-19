@@ -50,4 +50,18 @@
             color: $Bg;
         }
     }
+    &__button {
+        color: white;
+        border-radius: 9px;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 1em;
+
+        background: #0183cd;
+
+        padding: 17px;
+        border: none;
+        outline: none;
+    }
 }

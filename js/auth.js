@@ -45,7 +45,7 @@ const login =  async (email, password) => {
   }
   
 }
-
+///
 registerForm.addEventListener("submit", e => {
   e.preventDefault();
 
