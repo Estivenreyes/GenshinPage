@@ -22,10 +22,10 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        width: 8%;
+        width: 100%;
+        justify-content: center;
 
-        padding-top: 70px;
-        margin: 0px 0px;
+        padding-top: 50px;
     }
 
     &__register {
@@ -54,8 +54,7 @@
         font-family: Poppins;
         font-style: normal;
         font-weight: 300;
-        font-size: 1em;
-        font-size: 14px;
+        font-size: 0.8em;
 
         background: $White;
 
@@ -71,8 +70,7 @@
         font-family: Poppins;
         font-style: normal;
         font-weight: 300;
-        font-size: 1em;
-        font-size: 13px;
+        font-size: 0.8em;
         padding: 0px;
         padding-top: 25px;
         text-align: center;
@@ -89,8 +87,7 @@
         font-family: Poppins;
         font-style: normal;
         font-weight: 300;
-        font-size: 1em;
-        font-size: 13px;
+        font-size: 0.8em;
         margin: 5px;
 
         color: $White;
@@ -105,6 +102,7 @@
 
         background: #0183cd;
         margin: 30px;
+        margin-block-end: 50px;
         padding: 15px 70px;
         border: none;
         outline: none;

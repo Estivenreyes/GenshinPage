@@ -17,8 +17,7 @@
         <section class="view__section">
             <div class="view__image">
                 <figure class="view__image">
-                    <img class="view__cristal" src="./recursos/rechargeCristalGenesis/viewProducts/cg1.png"
-                        alt="cristalview">
+                    <img class="view__cristal" id="productImage" alt="productView">
                 </figure>
                 <h2 class="view__title">Genesis Cristal x 60</p>
                     <button class="view__buttonD">US$ 0,99</button>
@@ -37,11 +36,18 @@
                 <p class="view__text">
                     This crystal has the value of 60 Genesis Crystals do you want to recharge this vaule?
                 </p>
-                <p class="view__text">Cantidad:</p>
+                <p class="view__text">Amount:</p>
+                <div class="view__quantityBtn clickable"> - </div>
+                <input class="view__input" type="number" min="1" value="1">
+                <div class="view__quantityBtn clickable"> + </div>
                 <button class="view__buttonC">Buy</button>
             </article>
         </section>
+        </section>
     </div>
-    </section>
 
-    </div>
+    <script src="./js/products.js"></script>
+    <script src="./js/product.js"></script>
+</body>
+
+</html>

@@ -16,8 +16,7 @@
         border-radius: 32px;
         margin: 100px;
         align-content: center;
-        justify-content: flex-star;
-        padding-left: 180px;
+        justify-content: center;
 
         background-color: white;
     }
@@ -28,13 +27,19 @@
         flex-wrap: wrap;
         width: 50%;
         margin-top: 50px;
+        justify-content: center;
     }
+
     &__cristal {
+        width: 100%;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         margin-left: 20px;
+        justify-content: center;
+        align-items: center;
     }
+
     &__title {
         width: 100%;
         display: flex;
@@ -45,11 +50,12 @@
         font-weight: normal;
         font-size: 38px;
         padding-left: 0px;
-        justify-content: flex-start;
+        justify-content: center;
         margin: 100px;
         line-height: 57px;
         color: #111111;
     }
+
     &__buttonD {
         color: white;
         width: 70%;
@@ -64,6 +70,7 @@
         border: none;
         outline: none;
     }
+
     &__article {
         display: flex;
         flex-direction: row;
@@ -72,7 +79,7 @@
         width: 50%;
         background-color: #111111;
         border-radius: 32px;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
         padding: 30px;
     }
@@ -86,6 +93,7 @@
         padding-right: 70px;
         color: white;
     }
+
     &__buttonC {
         display: flex;
         flex-direction: row;
@@ -105,5 +113,34 @@
         padding: 15px 100px;
         border: none;
         outline: none;
+    }
+
+    &__input {
+        max-width: 60px;
+        outline: none;
+        border: none;
+
+        background: $Bg;
+        color: white;
+
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 22px;
+        line-height: 33px;
+
+        text-align: center;
+    }
+
+    &__quantityBtn {
+        box-sizing: border-box;
+        padding: 8px;
+        color: white;
+
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 22px;
+        line-height: 33px;
     }
 }

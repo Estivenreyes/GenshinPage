@@ -1,0 +1,15 @@
+@media all and (max-width: 414px) {
+    .authG {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 100%;
+        padding: 280px 0px;
+        color: $White;
+
+        background-image: url(/recursos/loginandregister/RegisterMobile.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}

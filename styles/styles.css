@@ -11,6 +11,22 @@ body {
   display: flex;
 }
 
+.clickable {
+  cursor: pointer;
+}
+
+/* reset */
+input[type=number] {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
 /*---------------------------------Var's---------------------------------*/
 /*---------------------------------Import's---------------------------------*/
 h2 {
@@ -239,9 +255,9 @@ a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 8%;
-  padding-top: 70px;
-  margin: 0px 0px;
+  width: 100%;
+  justify-content: center;
+  padding-top: 50px;
 }
 .authG__register {
   display: flex;
@@ -267,8 +283,7 @@ a {
   font-family: Poppins;
   font-style: normal;
   font-weight: 300;
-  font-size: 1em;
-  font-size: 14px;
+  font-size: 0.8em;
   background: #ffffff;
   margin: 10px;
   padding: 10px;
@@ -282,8 +297,7 @@ a {
   font-family: Poppins;
   font-style: normal;
   font-weight: 300;
-  font-size: 1em;
-  font-size: 13px;
+  font-size: 0.8em;
   padding: 0px;
   padding-top: 25px;
   text-align: center;
@@ -297,8 +311,7 @@ a {
   font-family: Poppins;
   font-style: normal;
   font-weight: 300;
-  font-size: 1em;
-  font-size: 13px;
+  font-size: 0.8em;
   margin: 5px;
   color: #ffffff;
 }
@@ -311,6 +324,8 @@ a {
   font-size: 1em;
   background: #0183cd;
   margin: 30px;
+  -webkit-margin-after: 50px;
+          margin-block-end: 50px;
   padding: 15px 70px;
   border: none;
   outline: none;
@@ -344,8 +359,7 @@ a {
   border-radius: 32px;
   margin: 100px;
   align-content: center;
-  justify-content: flex-star;
-  padding-left: 180px;
+  justify-content: center;
   background-color: white;
 }
 .view__image {
@@ -354,12 +368,16 @@ a {
   flex-wrap: wrap;
   width: 50%;
   margin-top: 50px;
+  justify-content: center;
 }
 .view__cristal {
+  width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   margin-left: 20px;
+  justify-content: center;
+  align-items: center;
 }
 .view__title {
   width: 100%;
@@ -371,7 +389,7 @@ a {
   font-weight: normal;
   font-size: 38px;
   padding-left: 0px;
-  justify-content: flex-start;
+  justify-content: center;
   margin: 100px;
   line-height: 57px;
   color: #111111;
@@ -397,7 +415,7 @@ a {
   width: 50%;
   background-color: #111111;
   border-radius: 32px;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   padding: 30px;
 }
@@ -428,4 +446,42 @@ a {
   padding: 15px 100px;
   border: none;
   outline: none;
+}
+.view__input {
+  max-width: 60px;
+  outline: none;
+  border: none;
+  background: #111111;
+  color: white;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 33px;
+  text-align: center;
+}
+.view__quantityBtn {
+  box-sizing: border-box;
+  padding: 8px;
+  color: white;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 33px;
+}
+
+@media all and (max-width: 414px) {
+  .authG {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    padding: 280px 0px;
+    color: #ffffff;
+    background-image: url(/recursos/loginandregister/RegisterMobile.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }/*# sourceMappingURL=styles.css.map */
