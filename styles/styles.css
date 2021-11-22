@@ -323,12 +323,40 @@ a {
   font-weight: 300;
   font-size: 1em;
   background: #0183cd;
-  margin: 30px;
-  -webkit-margin-after: 50px;
-          margin-block-end: 50px;
+  margin: 20px;
   padding: 15px 70px;
   border: none;
   outline: none;
+}
+.authG__logout {
+  color: white;
+  border-radius: 9px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1em;
+  background: #ff003e;
+  padding: 15px 20px;
+  border: none;
+  outline: none;
+}
+.authG #logout {
+  display: none;
+}
+.authG #logout.visible {
+  display: block;
+}
+.authG__google {
+  width: 50%;
+  padding: 10px;
+  margin: 20px;
+  fill: none;
+  background: none;
+  outline: none;
+  border: none;
+}
+.authG__img-google {
+  width: 5%;
 }
 
 .authL {

@@ -101,11 +101,45 @@
         font-size: 1em;
 
         background: #0183cd;
-        margin: 30px;
-        margin-block-end: 50px;
+        margin: 20px;
         padding: 15px 70px;
         border: none;
         outline: none;
+    }
+    &__logout {
+        color: white;
+        border-radius: 9px;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 1em;
+
+        background: #ff003e;
+        padding: 15px 20px;
+        border: none;
+        outline: none;
+    }
+
+    #logout {
+        display: none;
+
+        &.visible {
+            display: block;
+        }
+    }
+
+    &__google {
+        width: 50%;
+        padding: 10px;
+        margin: 20px;
+        fill: none;
+        background: none;
+        outline: none;
+        border: none;
+    }
+
+    &__img-google {
+        width: 5%;
     }
 }
 

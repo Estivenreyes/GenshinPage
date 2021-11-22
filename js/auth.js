@@ -1,7 +1,8 @@
 
   // Import the functions you need from the SDKs you need
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-app.js";
-import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-auth.js";
+import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged, signOut, signInWithPopup, GoogleAuthProvider } from 
+"https://www.gstatic.com/firebasejs/9.4.0/firebase-auth.js";
 
 const firebaseConfig = {
 apiKey: "AIzaSyADo3PwQB6pTfKo6zaxF_A54Y6sbR5CeJo",
@@ -34,16 +35,29 @@ const createUser = async (email, password) => {
 
 const login =  async (email, password) => {
   try {
-    const user = await signInWithEmailAndPassword(auth,email,password);
-    console.log(user);
+    const {user} = await signInWithEmailAndPassword(auth,email,password);
+    console.log(`Welcome ${user.email}`);  
   } catch (e) {
     console.log(e.code);
-
     if (e.code === "auth/user-not-found") {
       console.log("The user is not registered in our database...");
     }
   }
   
+}
+
+const loginwithgoogle = async () => {
+  const provider = new GoogleAuthProvider();
+  const result = await signInWithPopup(auth, provider);
+  console.log(result.user);
+}
+
+const logout = async () => {
+  try{
+    await signOut (auth);
+  } catch (e) {
+    console.log(e);
+  }
 }
 
 if(registerForm){
@@ -71,7 +85,26 @@ if(loginForm){
     if (email && password){
       login(email, password);
     }else{
-      console.log("Please complete all required fields...");
+      console.log("Please complete all required fields..."); 
     }
   });
 }
+
+/*googleButton.addEventListener("click", e =>{
+  loginwithgoogle();
+})*/
+
+logoutButton.addEventListener("click", e =>{
+  logout(); 
+})
+
+onAuthStateChanged(auth, (user)=> {
+  if(user){
+    loginForm.classList.add("hidden");
+    logoutButton.classList.add("visible");
+  } else {
+    loginForm.classList.remove("hidden");
+    logoutButton.classList.remove("visible");
+  }
+
+});
