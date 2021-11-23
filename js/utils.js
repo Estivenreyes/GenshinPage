@@ -5,7 +5,7 @@ const firebaseConfig = {
     storageBucket: "shopping-cart-790a7.appspot.com",
     messagingSenderId: "925482071152",
     appId: "1:925482071152:web:2a240fee616627056870b5",
-  };
+    };
 
 const formatCurrency = (price) => {
     return new Intl.NumberFormat("es-CO", {

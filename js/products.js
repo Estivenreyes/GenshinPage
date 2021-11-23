@@ -1,3 +1,9 @@
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-app.js";
+import { getFirestore, doc, setDoc} from "https://www.gstatic.com/firebasejs/9.3.0/firebase-firestore.js";
+
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+
 const products = [
     {
         id: 1,
@@ -117,3 +123,7 @@ const products = [
         type: "skin",
     },
 ];
+
+products.forEach( async (product) => {
+    await setDoc(doc(db, "product", `01289FB374BFA2F${product.id}`),product);
+}); 
