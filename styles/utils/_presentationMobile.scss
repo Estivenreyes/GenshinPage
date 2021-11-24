@@ -1,0 +1,112 @@
+@media all and (max-width: 1280px) {
+    .gameInformation {
+        display: flex;
+        width: 100%;
+        background-color: #fff;
+    }
+
+    .gameInformation__items {
+        justify-content: center;
+    }
+
+    .gameInformation__travels {
+        width: 700px;
+    }
+
+    .gameInformation__subtitle {
+        width: 100%;
+    }
+
+    .gameInformation__description {
+        width: 80%;
+    }
+
+    .gameInformation__button {
+        width: 50%;
+    }
+}
+
+@media all and (max-width: 768px) {
+    .gameInformation {
+        display: flex;
+        width: 100%;
+        background-color: #fff;
+    }
+    .gameInformation__section {
+        width: 50%;
+        align-items: center;
+    }
+    .gameInformation__travels {
+        width: 380px;
+        padding-right: 0;
+        margin-left: 100px;
+    }
+
+    .gameInformation__article {
+        padding: 50px 30px;
+        margin-left: 30px;
+        padding-right: 30px;
+        width: 40%;
+    }
+
+    .gameInformation__subtitle {
+        font-size: 1.8em;
+        line-height: 40px;
+    }
+
+    .gameInformation__description {
+        font-size: 0.9em;
+        line-height: 20px;
+        width: 100%;
+    }
+
+    .gameInformation__button {
+        width: 70%;
+        margin-top: 15px;
+    }
+}
+
+@media all and (max-width: 514px) {
+    .gameInformation {
+        display: flex;
+        width: 100%;
+        background-color: #fff;
+    }
+
+    .gameInformation__section {
+        display: none;
+        width: 0%;
+    }
+
+    .gameInformation__travels {
+        display: none;
+    }
+
+    .gameInformation__article {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .gameInformation__subtitle {
+        text-align: center;
+    }
+
+    .gameInformation__description {
+        display: flex;
+        padding-left: 30px;
+    }
+
+    .gameInformation__button {
+        width: 50%;
+        padding: 0px 0px;
+    }
+
+    .gameInformation__buttonSize {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+}

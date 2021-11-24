@@ -809,7 +809,6 @@ a {
   width: 100%;
   background-color: #fff;
 }
-
 .gameInformation__section {
   display: flex;
   flex-direction: column;
@@ -817,15 +816,13 @@ a {
   justify-content: center;
   padding: 0px 30px;
 }
-
-.gameInformation__section2 {
+.gameInformation__travels {
   display: flex;
-  flex-direction: column;
-  width: 55%;
-  justify-content: flex-start;
-  padding: 150px 30px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-right: 15px;
+  margin: 10px;
 }
-
 .gameInformation__items {
   width: 50%;
   display: flex;
@@ -833,8 +830,14 @@ a {
   flex-wrap: wrap;
   padding: 20px 250px;
 }
-
-.gameInformation__subtitles {
+.gameInformation__article {
+  display: flex;
+  flex-direction: column;
+  width: 55%;
+  justify-content: flex-start;
+  padding: 200px 30px;
+}
+.gameInformation__subtitle {
   padding: 0px 0px;
   width: 50%;
   color: #121212;
@@ -844,8 +847,7 @@ a {
   font-size: 2.5em;
   line-height: 60px;
 }
-
-.gameInformation__descriptions {
+.gameInformation__description {
   width: 45%;
   padding: 0px 0px;
   font-family: Poppins;
@@ -855,7 +857,6 @@ a {
   line-height: 25px;
   color: #121212;
 }
-
 .gameInformation__button {
   width: 35%;
   height: 60px;
@@ -871,4 +872,117 @@ a {
   margin-top: 25px;
   border: none;
   outline: none;
+}
+
+@media all and (max-width: 1280px) {
+  .gameInformation {
+    display: flex;
+    width: 100%;
+    background-color: #fff;
+  }
+
+  .gameInformation__items {
+    justify-content: center;
+  }
+
+  .gameInformation__travels {
+    width: 700px;
+  }
+
+  .gameInformation__subtitle {
+    width: 100%;
+  }
+
+  .gameInformation__description {
+    width: 80%;
+  }
+
+  .gameInformation__button {
+    width: 50%;
+  }
+}
+@media all and (max-width: 768px) {
+  .gameInformation {
+    display: flex;
+    width: 100%;
+    background-color: #fff;
+  }
+
+  .gameInformation__section {
+    width: 50%;
+    align-items: center;
+  }
+
+  .gameInformation__travels {
+    width: 380px;
+    padding-right: 0;
+    margin-left: 100px;
+  }
+
+  .gameInformation__article {
+    padding: 50px 30px;
+    margin-left: 30px;
+    padding-right: 30px;
+    width: 40%;
+  }
+
+  .gameInformation__subtitle {
+    font-size: 1.8em;
+    line-height: 40px;
+  }
+
+  .gameInformation__description {
+    font-size: 0.9em;
+    line-height: 20px;
+    width: 100%;
+  }
+
+  .gameInformation__button {
+    width: 70%;
+    margin-top: 15px;
+  }
+}
+@media all and (max-width: 514px) {
+  .gameInformation {
+    display: flex;
+    width: 100%;
+    background-color: #fff;
+  }
+
+  .gameInformation__section {
+    display: none;
+    width: 0%;
+  }
+
+  .gameInformation__travels {
+    display: none;
+  }
+
+  .gameInformation__article {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  .gameInformation__subtitle {
+    text-align: center;
+  }
+
+  .gameInformation__description {
+    display: flex;
+    padding-left: 30px;
+  }
+
+  .gameInformation__button {
+    width: 50%;
+    padding: 0px 0px;
+  }
+
+  .gameInformation__buttonSize {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
 }/*# sourceMappingURL=styles.css.map */

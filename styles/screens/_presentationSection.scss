@@ -2,68 +2,80 @@
     display: flex;
     width: 100%;
     background-color: #fff;
-}
 
-.gameInformation__section {
-    display: flex;
-    flex-direction: column;
-    width: 55%;
-    justify-content: center;
-    padding: 0px 30px;
-}
-.gameInformation__section2 {
-    display: flex;
-    flex-direction: column;
-    width: 55%;
-    justify-content: flex-start;
-    padding: 150px 30px;
-}
-.gameInformation__items {
-    width: 50%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 20px 250px;
-}
-.gameInformation__subtitles {
-    padding: 0px 0px;
-    width: 50%;
-    color: #121212;
+    &__section {
+        display: flex;
+        flex-direction: column;
+        width: 55%;
+        justify-content: center;
+        padding: 0px 30px;
+    }
 
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 2.5em;
-    line-height: 60px;
-}
+    &__travels {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-right: 15px;
+        margin: 10px;
+    }
 
-.gameInformation__descriptions {
-    width: 45%;
-    padding: 0px 0px;
+    &__items {
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 20px 250px;
+    }
 
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 1em;
-    line-height: 25px;
+    &__article {
+        display: flex;
+        flex-direction: column;
+        width: 55%;
+        justify-content: flex-start;
+        padding: 200px 30px;
+    }
 
-    color: #121212;
-}
-.gameInformation__button {
-    width: 35%;
-    height: 60px;
-    border-radius: 9px;
+    &__subtitle {
+        padding: 0px 0px;
+        width: 50%;
+        color: #121212;
 
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 1em;
-    line-height: center;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 2.5em;
+        line-height: 60px;
+    }
 
-    background: #0183cd;
-    color: #fff;
-    padding: 17px 0px;
-    margin-top: 25px;
-    border: none;
-    outline: none;
+    &__description {
+        width: 45%;
+        padding: 0px 0px;
+
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1em;
+        line-height: 25px;
+
+        color: #121212;
+    }
+
+    &__button {
+        width: 35%;
+        height: 60px;
+        border-radius: 9px;
+
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1em;
+        line-height: center;
+
+        background: #0183cd;
+        color: #fff;
+        padding: 17px 0px;
+        margin-top: 25px;
+        border: none;
+        outline: none;
+    }
 }
