@@ -28,3 +28,69 @@
         width: 220px;
     }
 }
+
+@media all and (max-width: 768px) {
+    .landingPage {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        background-image: url("../recursos/landing/Responsive720p.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .landingPage__text {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .landingPage__image {
+        margin-right: 80px;
+        padding-left: 30px;
+        justify-content: center;
+    }
+
+    .landingPage__button {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .landingPage__imgResponsive {
+        width: 200px;
+    }
+}
+
+@media all and (max-width: 514px) {
+    .landingPage {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        background-image: url("../recursos/landing/ResponsiveMobile.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .landingPage__text {
+        width: 100%;
+    }
+
+    .landingPage__title {
+        line-height: 40px;
+    }
+
+    .landingPage__paragraph {
+        font-size: 0.8em;
+    }
+
+    .landingPage__title {
+        font-size: 2em;
+    }
+
+    .landingPage__button {
+        display: none;
+    }
+}

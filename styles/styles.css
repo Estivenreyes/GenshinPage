@@ -664,8 +664,8 @@ a {
 }
 .landingPage__text {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-evenly;
   margin-top: 90px;
   margin-left: 60px;
   color: #ffffff;
@@ -674,9 +674,6 @@ a {
   padding: 50px;
   background: rgba(0, 0, 0, 0.53);
   border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
 }
 .landingPage__title {
   width: 100%;
@@ -742,4 +739,136 @@ a {
   .landingPage__imgResponsive {
     width: 220px;
   }
+}
+@media all and (max-width: 768px) {
+  .landingPage {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-image: url("../recursos/landing/Responsive720p.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .landingPage__text {
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+
+  .landingPage__image {
+    margin-right: 80px;
+    padding-left: 30px;
+    justify-content: center;
+  }
+
+  .landingPage__button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .landingPage__imgResponsive {
+    width: 200px;
+  }
+}
+@media all and (max-width: 514px) {
+  .landingPage {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-image: url("../recursos/landing/ResponsiveMobile.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .landingPage__text {
+    width: 100%;
+  }
+
+  .landingPage__title {
+    line-height: 40px;
+  }
+
+  .landingPage__paragraph {
+    font-size: 0.8em;
+  }
+
+  .landingPage__title {
+    font-size: 2em;
+  }
+
+  .landingPage__button {
+    display: none;
+  }
+}
+.gameInformation {
+  display: flex;
+  width: 100%;
+  background-color: #fff;
+}
+
+.gameInformation__section {
+  display: flex;
+  flex-direction: column;
+  width: 55%;
+  justify-content: center;
+  padding: 0px 30px;
+}
+
+.gameInformation__section2 {
+  display: flex;
+  flex-direction: column;
+  width: 55%;
+  justify-content: flex-start;
+  padding: 150px 30px;
+}
+
+.gameInformation__items {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 20px 250px;
+}
+
+.gameInformation__subtitles {
+  padding: 0px 0px;
+  width: 50%;
+  color: #121212;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.5em;
+  line-height: 60px;
+}
+
+.gameInformation__descriptions {
+  width: 45%;
+  padding: 0px 0px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1em;
+  line-height: 25px;
+  color: #121212;
+}
+
+.gameInformation__button {
+  width: 35%;
+  height: 60px;
+  border-radius: 9px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1em;
+  line-height: center;
+  background: #0183cd;
+  color: #fff;
+  padding: 17px 0px;
+  margin-top: 25px;
+  border: none;
+  outline: none;
 }/*# sourceMappingURL=styles.css.map */
