@@ -12,11 +12,11 @@
 
 <body>
     <header class="header header--big">
-        <div class="row">
+        <div class="nav">
             <img src="./recursos/landing/genshin.png" alt="GenshinLogo" />
             <nav class="nav" id="universal-bar">
                 <ol class="nav__ol" id="without_numbers">
-                    <li class="nav__item">Home</li>
+                    <li class="nav__item"><a class="nav__a" href="./index.html">Home</a></li>
                     <li class="nav__item">News</li>
                     <li class="nav__item">Characters</li>
                     <select class="nav__item" name="Meas" id="">
@@ -29,13 +29,16 @@
                         <a href="https://www.hoyolab.com/genshin/" target="_blank">HoYoLAB
                         </a>
                     </li>
-                    <li class="nav__item"><a href="./products.html">Recharge</a></li>
+                    <li class="nav__item"><a href="./store.html">Recharge</a></li>
                 </ol>
             </nav>
 
         </div>
 
-        <button class="button--download">Download</button>
+        <figure class="nav__shopping">
+            <img class="nav__carImage" src="./recursos/rechargeCristalGenesis/cart.png" alt="shoppingCar">
+        </figure>
+        <button class="button--download"><a class="nav__a" href="./login.html">Login</a></button>
     </header>
 
     <header class="header header--movil">

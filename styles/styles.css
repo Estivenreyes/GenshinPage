@@ -239,7 +239,7 @@ a {
   flex-wrap: wrap;
   align-items: center;
   width: 100%;
-  padding: 280px 0px;
+  padding: 300px 0px;
   color: #ffffff;
   background-image: url(/recursos/loginandregister/Register.png);
   background-size: cover;
@@ -293,6 +293,7 @@ a {
 .authG__checkbox {
   display: flex;
   align-items: flex-start;
+  flex-wrap: wrap;
   flex-direction: row;
   font-family: Poppins;
   font-style: normal;
@@ -300,6 +301,7 @@ a {
   font-size: 0.8em;
   padding: 0px;
   padding-top: 25px;
+  justify-content: center;
   text-align: center;
 }
 .authG--colorchange {
@@ -499,17 +501,70 @@ a {
   line-height: 33px;
 }
 
-@media all and (max-width: 414px) {
+@media all and (max-width: 714px) {
   .authG {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
+    align-content: center;
     width: 100%;
-    padding: 280px 0px;
+    padding: 280px 80px;
     color: #ffffff;
     background-image: url(/recursos/loginandregister/RegisterMobile.png);
     background-size: cover;
     background-repeat: no-repeat;
+  }
+}
+@media all and (max-width: 714px) {
+  .authG__auth {
+    width: 80%;
+  }
+
+  .authG__input {
+    width: 55%;
+  }
+
+  .authG__checkbox {
+    font: size 0.7em;
+  }
+
+  .authG__text {
+    padding-top: 20px;
+  }
+
+  .authG__google {
+    width: 100%;
+    margin: 10px;
+    -webkit-margin-after: 20px;
+            margin-block-end: 20px;
+  }
+}
+@media all and (max-width: 514px) {
+  .authG__auth {
+    width: 140%;
+    border-radius: 15px;
+  }
+
+  .authG__userImg {
+    width: 10%;
+  }
+
+  .authG__checkbox {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .authG__download {
+    padding: 10px 50px;
+    border-radius: 5px;
+  }
+
+  .authG__google {
+    width: 200%;
+    margin: 0;
+    -webkit-margin-after: 20px;
+            margin-block-end: 20px;
   }
 }/*# sourceMappingURL=styles.css.map */

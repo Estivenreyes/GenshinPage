@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>ShoppingCar</title>
+</head>
+
+<body>
+    <header class="header header--big">
+        <div class="row">
+            <img src="./recursos/landing/genshin.png" alt="GenshinLogo" />
+            <nav class="nav" id="universal-bar">
+                <ol class="nav__ol" id="without_numbers">
+                    <li class="nav__item">Home</li>
+                    <li class="nav__item">News</li>
+                    <li class="nav__item">Characters</li>
+                    <select class="nav__item" name="Meas" id="">
+                        <option value="world">World</option>
+                        <option value="explore">Explore</option>
+                        <option value="manga">Manga</option>
+                    </select>
+
+                    <li class="nav__item">
+                        <a href="https://www.hoyolab.com/genshin/" target="_blank">HoYoLAB
+                        </a>
+                    </li>
+                    <li class="nav__item"><a href="./products.html">Recharge</a></li>
+                </ol>
+            </nav>
+
+        </div>
+
+        <button class="button--download">Download</button>
+    </header>
+
+    <header class="header header--movil">
+        <img src="./recursos/hmenu.png" alt="GenshinLogo" />
+
+        <button class="button--download">Download</button>
+    </header>
+
+    <article class="store">
+
+        <section class="store__banner">
+            <img src="./recursos/rechargeCristalGenesis/banner.png" alt="Banner">
+        </section>
+
+        <section class="store__filters">
+            <div>
+                <label for="categories">
+                    <h2>Shopping Car</h2>
+                </label>
+            </div>
+            <div class="store__filter">
+                <select class="store__select" name="categories" id="categories">
+                    <option value="">All products</option>
+                    <option value="cristal">Cristal Genesis</option>
+                    <option value="skin">Skin</option>
+                    <option value="battlePass">Battle Pass</option>
+                </select>
+
+                <label for="Store__orderBy"></label>
+                <select class="store__select" name="orderBy" id="orderBy">
+                    <option value="">Price</option>
+                    <option value="high">higher to lower</option>
+                    <option value="lower">lower to higher</option>
+                </select>
+                <div class="store__promotion">
+                    <button class="store__button" id="store__promotion">Promotion</button>
+                </div>
+            </div>
+
+
+        </section>
+
+        <article class="store__container"></article>
+    </article>
+</body>
+
+</html>

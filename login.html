@@ -12,11 +12,11 @@
 
 <body>
     <header class="header header--big">
-        <div class="row">
+        <div class="nav">
             <img src="./recursos/landing/genshin.png" alt="GenshinLogo" />
             <nav class="nav" id="universal-bar">
                 <ol class="nav__ol" id="without_numbers">
-                    <li class="nav__item">Home</li>
+                    <li class="nav__item"><a class="nav__a" href="./index.html">Home</a></li>
                     <li class="nav__item">News</li>
                     <li class="nav__item">Characters</li>
                     <select class="nav__item" name="Meas" id="">
@@ -29,13 +29,16 @@
                         <a href="https://www.hoyolab.com/genshin/" target="_blank">HoYoLAB
                         </a>
                     </li>
-                    <li class="nav__item"><a href="./products.html">Recharge</a></li>
+                    <li class="nav__item"><a href="./store.html">Recharge</a></li>
                 </ol>
             </nav>
 
         </div>
 
-        <button class="button--download">Download</button>
+        <figure class="nav__shopping">
+            <img class="nav__carImage" src="./recursos/rechargeCristalGenesis/cart.png" alt="shoppingCar">
+        </figure>
+        <button class="button--download"><a class="nav__a" href="./login.html">Login</a></button>
     </header>
 
     <header class="header header--movil">
@@ -62,77 +65,6 @@
 
         </form>
     </div>
-
-
-
-    <footer class="footer">
-        <article class="footer__image">
-            <div class="footer__sectionbar"></div>
-            <figure class="footer__elemts">
-                <a href="https://www.facebook.com/genshinimpact.es/?brand_redir=326121328238064"><img
-                        src="./recursos/footer/facebook.png" alt="facebookImg"></a>
-            </figure>
-            <figure class="footer__elemts">
-                <a href="https://twitter.com/GenshinImpact"><img src="./recursos/footer/twitter.png"
-                        alt="twitterImg"></a>
-            </figure>
-            <figure class="footer__elemts">
-                <a href="https://www.youtube.com/c/GenshinImpact"><img src="./recursos/footer/youtube.png"
-                        alt="youtubeImg"></a>
-            </figure>
-            <figure class="footer__elemts">
-                <a href="https://www.instagram.com/genshinimpact/"><img src="./recursos/footer/instagram.png"
-                        alt="instagramImg"></a>
-            </figure>
-            <figure class="footer__elemts">
-                <a href="https://discord.com/invite/genshinimpact"><img src="./recursos/footer/discord.png"
-                        alt="discordImg"></a>
-            </figure>
-            <figure class="footer__elemts">
-                <a href="https://www.reddit.com/r/Genshin_Impact/"><img src="./recursos/footer/Reddit.png"
-                        alt="redditImg"></a>
-            </figure>
-            <figure class="footer__elemts">
-                <a href="https://www.hoyolab.com/home"><img src="./recursos/footer/hoYoLab.png" alt="hoyolab"></a>
-            </figure>
-            </div>
-        </article>
-        <article>
-            <div class="footer__logos">
-                <figure>
-                    <img src="./recursos/footer/mihoyoLogo.png" alt="mihoyoLogo">
-                </figure>
-                <figure>
-                    <img src="./recursos/footer/genshinLogo.svg" alt="genshinLogo">
-                </figure>
-            </div>
-        </article>
-        <div class="footer__fond">
-            <p>
-                | Privacy Policy | Terms of Service
-            </p>
-            <p>
-                | About us | Contact us |
-            </p>
-            <p class="footer__fond--copy">
-                Copyright © 2020 miHoYo All Rights Reserved
-            </p>
-            <p class="footer__fond--ps5">
-                "PlayStation Family Mark," "PS5 logo" and "PS4 logo" are registered trademarks or trademarks of Sony
-                Interactive Entertainment Inc.
-            </p>
-            <p>
-                Epic, Epic Games, Epic Games Store, the Epic Games Store logo, and Epic Online Services are trademarks
-                and/or registered trademarks of Epic Games. All other trademarks are the property of their respective
-                owners.
-            </p>
-        </div>
-        <div class="footer__pegi">
-            <figure>
-                <img src="./recursos/footer/pegi.png" alt="pegiImg">
-            </figure>
-        </div>
-    </footer>
 
     <script type="module" src="./js/auth.js"></script>
 </body>
