@@ -338,7 +338,7 @@ a {
   font-weight: 300;
   font-size: 1em;
   background: #ff003e;
-  padding: 15px 20px;
+  padding: 15px 65px;
   border: none;
   outline: none;
 }
@@ -367,9 +367,11 @@ a {
   flex-wrap: wrap;
   align-items: center;
   width: 100%;
-  padding: 280px 0px;
+  padding: 357px 0px;
   color: #ffffff;
   background-image: url(/recursos/loginandregister/Login.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .view {
@@ -377,6 +379,7 @@ a {
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
+  padding: 150px 0px;
   background-image: url(/recursos/rechargeCristalGenesis/viewProducts/backgroundview1.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -501,7 +504,34 @@ a {
   line-height: 33px;
 }
 
-@media all and (max-width: 714px) {
+@media all and (max-width: 1280px) {
+  .authG__text {
+    padding-top: 10px;
+  }
+
+  .authG__input {
+    width: 40%;
+  }
+
+  .authG__google {
+    width: 100%;
+  }
+
+  .authG__img-google {
+    width: 30px;
+  }
+
+  .authG__download {
+    border-radius: 7px;
+    padding: 10px 60px;
+  }
+
+  .authG__logout {
+    border-radius: 7px;
+    padding: 10px 52px;
+  }
+}
+@media all and (max-width: 768px) {
   .authG {
     display: flex;
     flex-direction: column;
@@ -516,14 +546,29 @@ a {
     background-size: cover;
     background-repeat: no-repeat;
   }
+
+  .authL {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    padding: 280px 80px;
+    color: #ffffff;
+    background-image: url(/recursos/loginandregister/LoginMobile.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
-@media all and (max-width: 714px) {
+@media all and (max-width: 768px) {
   .authG__auth {
     width: 80%;
   }
 
   .authG__input {
-    width: 55%;
+    width: 65%;
   }
 
   .authG__checkbox {
@@ -540,10 +585,46 @@ a {
     -webkit-margin-after: 20px;
             margin-block-end: 20px;
   }
+
+  .authG__logout {
+    border-radius: 7px;
+    padding: 10px 40px;
+  }
+}
+@media all and (max-width: 514px) {
+  .authG {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    padding: 280px 100px;
+    color: #ffffff;
+    background-image: url(/recursos/loginandregister/RegisterMobile.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .authL {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    padding: 280px 100px;
+    color: #ffffff;
+    background-image: url(/recursos/loginandregister/LoginMobile.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
 @media all and (max-width: 514px) {
   .authG__auth {
-    width: 140%;
+    width: 150%;
     border-radius: 15px;
   }
 
@@ -562,9 +643,103 @@ a {
   }
 
   .authG__google {
-    width: 200%;
-    margin: 0;
-    -webkit-margin-after: 20px;
-            margin-block-end: 20px;
+    margin: 10px;
+  }
+
+  .authG__img-google {
+    width: 25px;
+  }
+}
+.landingPage {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  background-image: url("../recursos/landing/landingImage.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: center;
+  padding: 100px 50px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.landingPage__text {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 90px;
+  margin-left: 60px;
+  color: #ffffff;
+  margin-bottom: 50px;
+  width: 50%;
+  padding: 50px;
+  background: rgba(0, 0, 0, 0.53);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.landingPage__title {
+  width: 100%;
+  padding-top: 20px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 3em;
+  line-height: 60px;
+  margin: 0;
+}
+.landingPage__paragraph {
+  width: 87%;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 0.9em;
+  line-height: 25px;
+  margin-top: 20px;
+}
+.landingPage__button {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0px 20px;
+  align-items: flex-start;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.landingPage__image {
+  width: 11%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0px 0px;
+}
+
+@media all and (max-width: 1280px) {
+  .landingPage {
+    background-image: url("../recursos/landing/Responsive720p.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+  }
+}
+@media all and (max-width: 1280px) {
+  .landingPage__title {
+    font-size: 2.5em;
+  }
+
+  .landingPage__paragraph {
+    width: 95%;
+  }
+
+  .landingPage__text {
+    width: 70%;
+  }
+
+  .landingPage__image {
+    width: 15%;
+  }
+
+  .landingPage__imgResponsive {
+    width: 220px;
   }
 }/*# sourceMappingURL=styles.css.map */

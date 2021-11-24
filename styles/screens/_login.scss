@@ -117,7 +117,7 @@
         font-size: 1em;
 
         background: #ff003e;
-        padding: 15px 20px;
+        padding: 15px 65px;
         border: none;
         outline: none;
     }
@@ -151,8 +151,10 @@
     flex-wrap: wrap;
     align-items: center;
     width: 100%;
-    padding: 280px 0px;
+    padding: 357px 0px;
     color: $White;
 
     background-image: url(/recursos/loginandregister/Login.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }

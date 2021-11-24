@@ -92,60 +92,6 @@ h2 {
     outline: none;
 }
 
-.nav__a {
-    color: #ffffff;
-}
-
-/*---------------------------------Landing page---------------------------------*/
-
-.landingPage {
-    width: 100%;
-
-    background-image: url("../recursos/landing/landingImage.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 769px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0px 50px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
-
-.landingPage__text {
-    color: #ffffff;
-    padding: 30px;
-    margin-bottom: 50px;
-
-    width: 940px;
-    height: 352px;
-    background: rgba(0, 0, 0, 0.53);
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-
-.landingPage__text .title {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 60px;
-    margin: 0;
-}
-
-.landingPage__text .paragraph {
-    width: 70%;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 1em;
-    line-height: 25px;
-
-    margin: 0;
-}
-
 .nav__shopping {
     display: flex;
     flex-direction: column;
@@ -160,21 +106,10 @@ h2 {
     width: 5%;
 }
 
-.landingPage__button {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-    align-items: center;
-    padding: 0px 0px;
-
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+.nav__a {
+    color: #ffffff;
 }
-.landingPage__image {
-    display: flex;
 
-    width: 7%;
-}
 /*---------------------------------Game presentation section---------------------------------*/
 .gameInformation {
     display: flex;

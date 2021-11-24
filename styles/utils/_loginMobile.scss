@@ -1,0 +1,151 @@
+@media all and (max-width: 1280px) {
+    .authG__text {
+        padding-top: 10px;
+    }
+    .authG__input {
+        width: 40%;
+    }
+
+    .authG__google {
+        width: 100%;
+    }
+
+    .authG__img-google {
+        width: 30px;
+    }
+
+    .authG__download {
+        border-radius: 7px;
+        padding: 10px 60px;
+    }
+    .authG__logout {
+        border-radius: 7px;
+        padding: 10px 52px;
+    }
+}
+
+@media all and (max-width: 768px) {
+    .authG {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+        padding: 280px 80px;
+        color: $White;
+
+        background-image: url(/recursos/loginandregister/RegisterMobile.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .authL {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+        padding: 280px 80px;
+        color: $White;
+
+        background-image: url(/recursos/loginandregister/LoginMobile.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+@media all and (max-width: 768px) {
+    .authG__auth {
+        width: 80%;
+    }
+
+    .authG__input {
+        width: 65%;
+    }
+
+    .authG__checkbox {
+        font: size 0.7em;
+    }
+
+    .authG__text {
+        padding-top: 20px;
+    }
+
+    .authG__google {
+        width: 100%;
+        margin: 10px;
+        margin-block-end: 20px;
+    }
+
+    .authG__logout {
+        border-radius: 7px;
+        padding: 10px 40px;
+    }
+}
+
+@media all and (max-width: 514px) {
+    .authG {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+        padding: 280px 100px;
+        color: $White;
+
+        background-image: url(/recursos/loginandregister/RegisterMobile.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .authL {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+        padding: 280px 100px;
+        color: $White;
+
+        background-image: url(/recursos/loginandregister/LoginMobile.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+@media all and (max-width: 514px) {
+    .authG__auth {
+        width: 150%;
+        border-radius: 15px;
+    }
+
+    .authG__userImg {
+        width: 10%;
+    }
+
+    .authG__checkbox {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .authG__download {
+        padding: 10px 50px;
+        border-radius: 5px;
+    }
+
+    .authG__google {
+        margin: 10px;
+    }
+
+    .authG__img-google {
+        width: 25px;
+    }
+}

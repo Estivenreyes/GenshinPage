@@ -42,4 +42,6 @@ $White: #ffffff;
 @import "./screens/store";
 @import "./screens/login";
 @import "./screens/product";
-@import "./screens/loginstyle";
+@import "./utils/loginMobile";
+@import "./screens/landing";
+@import "./utils/landingMobile";
